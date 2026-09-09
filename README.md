@@ -151,3 +151,27 @@ python -m http.server 8000
 |------|------|
 | 2026年5月 | 初版作成（atushi0095-del/aju-works-site） |
 | 2026年5月 | Organization（ajuworks/ajuworks.github.io）へ移行、公開URL変更 |
+
+## アプリ関連ページの生成について（2026年9月〜）
+
+`index.html` の「Aju Worksのアプリ」セクション、`apps.html`、`apps/*.html` の11ページは、
+共通テンプレートから生成しています。
+
+```bash
+python tools/generate_app_pages.py
+```
+
+- アプリの掲載内容（名称・アプリID・公開状況・Google Play URL・機能・データの取り扱い）は
+  `tools/generate_app_pages.py` 冒頭の `APPS` にまとめてあります。ここを直せば3種のページに反映されます。
+- 生成対象のHTMLを手で直すと、次回の生成で上書きされます。編集は `APPS` 側で行ってください。
+- `privacy.html` / `support.html` / `about.html` / `terms.html` は生成対象外で、手で編集します。
+- 掲載する事実は、各アプリの `AndroidManifest.xml` / `build.gradle` / `app.json` / `strings.xml` /
+  README・リリース資料で確認できたものだけに限定しています。推測で埋めないでください。
+
+### アプリアイコン
+
+`assets/img/apps/` のアイコンは、各アプリプロジェクトのアイコン資産から作成したものです。
+
+- ラスタ形式のアイコンを持つアプリ: `mipmap-xxxhdpi/ic_launcher` または Play用アイコンを192pxへ縮小したPNG
+- アダプティブアイコン（ベクター）のみのアプリ: `ic_launcher_background` / `ic_launcher_foreground` の
+  ベクタードローアブルをSVGへ変換したもの
