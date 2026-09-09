@@ -196,8 +196,8 @@ APPS = [
   ),
   dict(
     slug="readrecall",
-    name="読書記憶",
-    short="読書記憶",
+    name="ヨミオク｜読書を記憶に残す",
+    short="ヨミオク",
     app_id="com.ajuworks.readrecall",
     tagline="読んだはず、をなくす。",
     category="教育・読書",
@@ -206,7 +206,7 @@ APPS = [
     icon="readrecall.svg",
     card="本から得たことを軽く残し、後日思い出し、別の本とつなぐ。要点づくりは端末内AIで行います。",
     overview=[
-      "本から得たことを軽く残し、後日思い出し、別の本とつなぎ、他の読者の異なる視点を自分の理解へ取り込む——という流れを1つのアプリにしたものです。開発名は ReadRecall、アプリ内の表示名は「読書記憶」です。",
+      "本から得たことを軽く残し、後日思い出し、別の本とつなぎ、他の読者の異なる視点を自分の理解へ取り込む——という流れを1つのアプリにしたものです。開発時の名称は ReadRecall（読書記憶）です。",
       "メモの要点づくり・本同士のつながり判定・視点の統合は、すべて端末内のAIで行います。メモの内容が外部のAIサービスへ送られることはありません。端末が端末内AIに対応していない場合は、AIを使わず、書いた言葉をそのまま要点として扱います。",
       "現在は公開準備中です。Google Play への提出前の確認作業を進めています。",
     ],
@@ -689,7 +689,7 @@ def build_index():
 
     html = (
         head("", "Aju Works — Androidアプリ開発・デジタル制作スタジオ",
-             "日々の実務と暮らしを少し便利にするデジタル制作スタジオ。FANVOLT、筋トレ記録＆ベンチコーチ、Focus Gate、歩数・血圧手帳、読書記憶など、記録と習慣づくりのAndroidアプリを企画・開発しています。",
+             "日々の実務と暮らしを少し便利にするデジタル制作スタジオ。FANVOLT、筋トレ記録＆ベンチコーチ、Focus Gate、歩数・血圧手帳、ヨミオクなど、記録と習慣づくりのAndroidアプリを企画・開発しています。",
              SITE + "/", "Aju Works — Androidアプリ開発・デジタル制作スタジオ")
         + header("") + body + footer("")
     )
@@ -769,7 +769,7 @@ def build_apps():
 
     html = (
         head("", "アプリ一覧 — Aju Works",
-             "Aju Worksが開発したAndroidアプリの一覧。FANVOLT、筋トレ記録＆ベンチコーチ、サブスク整理、Focus Gate、歩数・血圧手帳、読書記憶、WatchIt、Night Fadeなど。",
+             "Aju Worksが開発したAndroidアプリの一覧。FANVOLT、筋トレ記録＆ベンチコーチ、サブスク整理、Focus Gate、歩数・血圧手帳、ヨミオク、WatchIt、Night Fadeなど。",
              SITE + "/apps.html", "アプリ一覧 — Aju Works")
         + header("") + body + footer("")
     )
