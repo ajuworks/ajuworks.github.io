@@ -18,13 +18,12 @@ APPS = [
     slug="gym-record",
     name="筋トレ記録＆ベンチコーチ",
     short="筋トレ記録＆ベンチコーチ",
-    store_name="筋トレ記録＆ベンチコーチ",
-    device_name="筋トレ記録＆ベンチコーチ",
+
     app_id="com.atushi.benchcoach",
     tagline="重量・回数・セット数を記録して、ベンチプレス100kgへ。",
     category="健康・フィットネス",
-    status="live",
-    play="https://play.google.com/store/apps/details?id=com.atushi.benchcoach",
+    status="prep",
+    play=None,
     icon="gym-record.png",
     card="重量・回数・セット数の記録と次回メニュー提案で、筋トレの継続を支えるアプリ。Wear OS対応。",
     overview=[
@@ -48,15 +47,14 @@ APPS = [
       ("主要な権限", "インターネット / バイブレーション / 課金 / 広告ID / Health Connect への運動記録の書き込み"),
     ],
     privacy=("https://gym-record-bench-coach-policy.vercel.app/privacy", "専用プライバシーポリシーを見る", True),
-    badges=[("badge-android", "Android"), ("badge-free", "基本無料"), ("badge-free", "Wear OS対応")],
+    badges=[("badge-android", "Android"), ("badge-free", "Wear OS対応"), ("badge-coming-soon", "公開準備中")],
     note="提案メニューは、ベンチプレス100kgを目指す方向けの内容を中心にしつつ、マシン中心でトレーニングする方にも使いやすい構成を想定しています。",
   ),
   dict(
     slug="fanvolt",
     name="FANVOLT｜推し活記録・支出管理",
     short="FANVOLT",
-    store_name="FANVOLT｜推し活記録・支出管理",
-    device_name="FANVOLT",
+
     app_id="com.ajuworks.fanvolt",
     tagline="推し活の記録・予定・支出を、貼るだけで残す。",
     category="ライフスタイル",
@@ -89,15 +87,13 @@ APPS = [
   ),
   dict(
     slug="subscription-manager",
-    name="サブスク管理｜解約ナビ・固定費整理",
-    short="サブスク管理",
-    store_name="サブスク管理｜解約ナビ・固定費整理",
-    device_name="サブスク整理",
+    name="サブスク整理｜解約ナビ",
+    short="サブスク整理",
     app_id="com.atush.cancelnav",
     tagline="契約経路から、解約ページへ最短で。",
     category="家計・ツール",
-    status="live",
-    play="https://play.google.com/store/apps/details?id=com.atush.cancelnav",
+    status="prep",
+    play=None,
     icon="subscription-manager.png",
     card="サブスクの金額と更新日を管理し、契約経路に応じた公式の解約手続きへ案内します。",
     overview=[
@@ -120,20 +116,18 @@ APPS = [
       ("通知", "更新日前のリマインドを端末内のローカル通知で行います。"),
     ],
     privacy=("../privacy.html#cancel-nav", "プライバシーポリシーを見る", False),
-    badges=[("badge-android", "Android"), ("badge-free", "基本無料")],
+    badges=[("badge-android", "Android"), ("badge-coming-soon", "公開準備中")],
     note=None,
   ),
   dict(
     slug="focus-gate",
-    name="スマホ使いすぎ防止｜アプリ制限・集中",
-    short="スマホ使いすぎ防止",
-    store_name="スマホ使いすぎ防止｜アプリ制限・集中",
-    device_name="Focus Gate",
+    name="Focus Gate｜スマホ使いすぎ防止",
+    short="Focus Gate",
     app_id="com.ajuworks.focusgate",
     tagline="開く前に、理由と少しの待ち時間を。",
     category="生産性・自己管理",
-    status="live",
-    play="https://play.google.com/store/apps/details?id=com.ajuworks.focusgate",
+    status="prep",
+    play=None,
     icon="focus-gate.png",
     card="選んだアプリを開くとき、理由の入力と待機を求めて無意識な利用に気づきを促します。",
     overview=[
@@ -156,20 +150,18 @@ APPS = [
       ("主要な権限", "使用状況へのアクセス / 他のアプリの上に重ねて表示 / フォアグラウンドサービス / 通知 / インターネット"),
     ],
     privacy=("../privacy.html#focus-gate", "プライバシーポリシーを見る", False),
-    badges=[("badge-android", "Android"), ("badge-free", "無料")],
+    badges=[("badge-android", "Android"), ("badge-coming-soon", "公開準備中")],
     note=None,
   ),
   dict(
     slug="step-bp-diary",
-    name="血圧手帳｜歩数・健康記録",
-    short="血圧手帳",
-    store_name="血圧手帳｜歩数・健康記録",
-    device_name="歩数・血圧手帳",
+    name="歩数・血圧手帳",
+    short="歩数・血圧手帳",
     app_id="com.ajuworks.stepbpdiary",
     tagline="歩数・血圧・体重・食事を、広告なしで記録する。",
     category="健康・フィットネス",
-    status="live",
-    play="https://play.google.com/store/apps/details?id=com.ajuworks.stepbpdiary",
+    status="prep",
+    play=None,
     icon="step-bp-diary.png",
     card="歩数・血圧・体重・食事を一元管理する非医療用の健康記録手帳。広告・外部送信なし。",
     overview=[
@@ -185,7 +177,7 @@ APPS = [
       "全データのローカルJSONバックアップ",
     ],
     shots=[
-      ("01_home.jpg", "血圧手帳｜歩数・健康記録のホーム画面"),
+      ("01_home.jpg", "歩数・血圧手帳のホーム画面"),
       ("02_steps.jpg", "歩数の記録画面"),
       ("03_blood_pressure.jpg", "血圧の記録画面"),
       ("05_analytics.jpg", "分析グラフ画面"),
@@ -199,7 +191,7 @@ APPS = [
       ("主要な権限", "身体活動（歩数計測）/ 通知 / Health Connect の歩数読み取り"),
     ],
     privacy=("../privacy.html#step-bp-diary", "プライバシーポリシーを見る", False),
-    badges=[("badge-android", "Android"), ("badge-free", "無料")],
+    badges=[("badge-android", "Android"), ("badge-coming-soon", "公開準備中")],
     note="本アプリは医療機器ではありません。血圧を測定する機能はなく、数値は手動入力のみです。表示される数値は入力値から算出した概算の参考値であり、診断・治療を目的としたものではありません。健康上の問題や治療方針については、必ず医師・専門家にご相談ください。",
   ),
   dict(
@@ -414,7 +406,7 @@ APPS = [
 ]
 
 # ホームに出す代表6本
-HOME_SLUGS = ["gym-record", "fanvolt", "focus-gate", "step-bp-diary", "readrecall", "watchit"]
+HOME_SLUGS = ["fanvolt", "gym-record", "focus-gate", "step-bp-diary", "readrecall", "watchit"]
 
 BY_SLUG = {a["slug"]: a for a in APPS}
 
@@ -697,7 +689,7 @@ def build_index():
 
     html = (
         head("", "Aju Works — Androidアプリ開発・デジタル制作スタジオ",
-             "日々の実務と暮らしを少し便利にするデジタル制作スタジオ。筋トレ記録＆ベンチコーチ、FANVOLT、スマホ使いすぎ防止、血圧手帳、読書記憶など、記録と習慣づくりのAndroidアプリを企画・開発しています。",
+             "日々の実務と暮らしを少し便利にするデジタル制作スタジオ。FANVOLT、筋トレ記録＆ベンチコーチ、Focus Gate、歩数・血圧手帳、読書記憶など、記録と習慣づくりのAndroidアプリを企画・開発しています。",
              SITE + "/", "Aju Works — Androidアプリ開発・デジタル制作スタジオ")
         + header("") + body + footer("")
     )
@@ -707,6 +699,11 @@ def build_index():
 # ---------------------------------------------------------------------------
 # apps.html
 # ---------------------------------------------------------------------------
+def grid_class(n):
+    """件数に合わせたグリッドのクラス。3件以上のときだけ3列にする。"""
+    return "app-grid app-grid-3" if n >= 3 else "app-grid"
+
+
 def build_apps():
     live = [a for a in APPS if a["status"] == "live"]
     prep = [a for a in APPS if a["status"] != "live"]
@@ -730,7 +727,7 @@ def build_apps():
           <p>Google Playで公開しています。</p>
         </div>
 
-        <div class="app-grid app-grid-3">
+        <div class="%(live_grid)s"%(live_style)s>
 %(live)s
         </div>
       </div>
@@ -745,7 +742,7 @@ def build_apps():
           <p>開発・確認作業を進めています。公開時期が決まりましたらこのページで案内します。</p>
         </div>
 
-        <div class="app-grid app-grid-3">
+        <div class="%(prep_grid)s">
 %(prep)s
         </div>
       </div>
@@ -764,11 +761,15 @@ def build_apps():
 """ % dict(
         live="\n".join(app_tile(a, "", with_actions=True) for a in live),
         prep="\n".join(app_tile(a, "", with_actions=True) for a in prep),
+        live_grid=grid_class(len(live)),
+        live_style=(' style="grid-template-columns: 1fr; max-width: 520px; margin: 0 auto;"'
+                    if len(live) == 1 else ""),
+        prep_grid=grid_class(len(prep)),
     )
 
     html = (
         head("", "アプリ一覧 — Aju Works",
-             "Aju Worksが開発したAndroidアプリの一覧。筋トレ記録＆ベンチコーチ、FANVOLT、サブスク管理｜解約ナビ、スマホ使いすぎ防止、血圧手帳、読書記憶、WatchIt、Night Fadeなど。",
+             "Aju Worksが開発したAndroidアプリの一覧。FANVOLT、筋トレ記録＆ベンチコーチ、サブスク整理、Focus Gate、歩数・血圧手帳、読書記憶、WatchIt、Night Fadeなど。",
              SITE + "/apps.html", "アプリ一覧 — Aju Works")
         + header("") + body + footer("")
     )
@@ -796,10 +797,8 @@ def related_for(app):
 def fact_rows(app):
     """事実行。ストア掲載名がサイト掲載名と違う場合は先頭に出す。"""
     rows = []
-    if app.get("store_name") and app["store_name"] != app["name"]:
+    if app["status"] == "live" and app.get("store_name") and app["store_name"] != app["name"]:
         rows.append(("Google Playでの表示名", app["store_name"]))
-    if app.get("device_name") and app["device_name"] != app["name"]:
-        rows.append(("アプリ内の表示名", "%s（端末のホーム画面にはこの名前で表示されます）" % app["device_name"]))
     rows.append(("アプリID", "<code>%s</code>" % app["app_id"]))
     rows.extend(app["facts"])
     return rows
