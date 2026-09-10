@@ -195,24 +195,29 @@ APPS = [
     note="本アプリは医療機器ではありません。血圧を測定する機能はなく、数値は手動入力のみです。表示される数値は入力値から算出した概算の参考値であり、診断・治療を目的としたものではありません。健康上の問題や治療方針については、必ず医師・専門家にご相談ください。",
   ),
   dict(
-    slug="readrecall",
+    slug="yomioku",
     name="ヨミオク｜読書を記憶に残す",
     short="ヨミオク",
     app_id="com.ajuworks.readrecall",
-    tagline="読んだはず、をなくす。",
+    tagline="読んだものを、自分の中に残す。",
     category="教育・読書",
     status="prep",
     play=None,
-    icon="readrecall.svg",
+    icon="yomioku.svg",
     card="本から得たことを軽く残し、後日思い出し、別の本とつなぐ。要点づくりは端末内AIで行います。",
     overview=[
       "本から得たことを軽く残し、後日思い出し、別の本とつなぎ、他の読者の異なる視点を自分の理解へ取り込む——という流れを1つのアプリにしたものです。開発時の名称は ReadRecall（読書記憶）です。",
       "メモの要点づくり・本同士のつながり判定・視点の統合は、すべて端末内のAIで行います。メモの内容が外部のAIサービスへ送られることはありません。端末が端末内AIに対応していない場合は、AIを使わず、書いた言葉をそのまま要点として扱います。",
+      "文章の取り込みは、撮影したあとで残したい範囲を囲む方式です。撮るときにページを枠へきっちり合わせる必要はありません。図・表・グラフは文字に直さず、画像のまま残せます。",
       "現在は公開準備中です。Google Play への提出前の確認作業を進めています。",
     ],
     features=[
       "本の登録（ISBNバーコード読み取り・書誌情報の検索）",
-      "メモの作成と、紙面を撮影して文字を読み取る取り込み（端末内OCR）",
+      "文章の取り込み（撮影 → 残したい範囲を囲む → 端末内で文字に → その場で修正）",
+      "縦書き・横書きの読み順の切り替え",
+      "図・表・グラフを画像のまま残す",
+      "話した内容を端末内で文字にする音声入力（対応端末のみ）",
+      "キーボード入力と、コピーした文章の貼り付け",
       "端末内AIによる要点づくり（非対応端末では入力文をそのまま要点として扱う）",
       "復習（1／3／7／14／30／60／120日の間隔で出題）",
       "本同士のつながりの提示",
@@ -220,15 +225,19 @@ APPS = [
       "本・メモ・要点・つながり・復習のJSON書き出し",
     ],
     facts=[
-      ("データ保存場所", "本の情報・メモ・OCRの結果・要点・つながり・復習カード・取り込んだ視点は端末内のデータベースに保存します。撮影した画像そのものは保存も送信もしません。"),
+      ("会員登録", "会員登録はありません。メールアドレス・パスワード・電話番号による登録や、外部アカウントでのログインは行いません。"),
+      ("データ保存場所", "本の情報・メモ・読み取った文字・要点・つながり・復習カード・取り込んだ視点は端末内のデータベースに保存します。図表として残すことを選んだ画像は、アプリ専用の領域に保存し、外部へ送信しません。文章の読み取りに使った撮影画像は保存しません。"),
+      ("音声入力", "端末内の音声認識だけを使います。音声も認識結果も外部へ送信せず、録音データも保存しません。端末内認識に対応していない端末では機能を表示しません。"),
       ("端末内AI", "要点の作成・視点の集約・統合は端末内のAIで行います。メモの内容を外部のAIサービスへ送信しません。"),
       ("「みんなの視点」", "この機能を使うときだけ Firebase（Cloud Firestore / Authentication / App Check）へ接続し、本を特定する識別子を送信して投稿を取得します。現在の版は閲覧のみで、投稿機能は無効です。"),
       ("識別子", "閲覧には Firebase の匿名認証による識別子（UID）を使います。アカウントではなく、氏名やメールアドレスとは結び付いていません。"),
       ("外部サービス", "Firebase（Authentication / Cloud Firestore / App Check）、Google Books API・openBD（書誌情報の検索。検索語のみを送信）"),
       ("広告", "広告配信SDKは使用していません。"),
-      ("主要な権限", "カメラ（バーコード読み取り・紙面の文字読み取り）/ インターネット / ネットワーク状態"),
+      ("データの削除", "アプリ内の「設定 → データとプライバシー」から、端末内に保存されたデータをまとめて削除できます。アンインストールでも端末内のデータは削除されます。"),
+      ("主要な権限", "カメラ（バーコード読み取り・紙面の文字読み取り・図表の撮影）/ マイク（音声入力を選んだときのみ）/ インターネット / ネットワーク状態"),
     ],
-    privacy=("../privacy.html#readrecall", "プライバシーポリシーを見る", False),
+    privacy=("../privacy.html#yomioku", "プライバシーポリシーを見る", False),
+    extra_links=[("../privacy.html#yomioku-data-deletion", "データ削除について", False)],
     badges=[("badge-android", "Android"), ("badge-coming-soon", "公開準備中")],
     note="カメラを許可しなくても、本の登録とメモの作成はできます。",
   ),
@@ -406,7 +415,7 @@ APPS = [
 ]
 
 # ホームに出す代表6本
-HOME_SLUGS = ["fanvolt", "gym-record", "focus-gate", "step-bp-diary", "readrecall", "watchit"]
+HOME_SLUGS = ["fanvolt", "gym-record", "focus-gate", "step-bp-diary", "yomioku", "watchit"]
 
 BY_SLUG = {a["slug"]: a for a in APPS}
 
@@ -857,6 +866,13 @@ def build_detail(app):
     else:
         privacy_link = '<a href="%s" class="btn btn-outline">%s</a>' % (purl, plabel)
 
+    # プライバシーポリシー以外に案内したいリンク（データ削除の説明など）
+    for url, label, external in app.get("extra_links", []):
+        target = ' target="_blank" rel="noopener noreferrer"' if external else ""
+        privacy_link += (
+            "\n          " + '<a href="%s"%s class="btn btn-outline">%s</a>' % (url, target, label)
+        )
+
     note_block = ""
     if app.get("note"):
         note_block = ('\n        <div class="app-note-card mt-6">\n          <p>%s</p>\n        </div>' % app["note"])
@@ -994,6 +1010,53 @@ def build_detail(app):
     write(os.path.join(ROOT, "apps", "%s.html" % app["slug"]), html)
 
 
+def build_404():
+    """GitHub Pages が 404 のときに返すページ。
+
+    ページ名を変えた場合（例: apps/readrecall.html → apps/yomioku.html）に
+    古いURLを踏んだ人が行き止まりにならないよう、案内を出す。
+    リンクはルート基準で書く。どの階層で 404 になっても壊れないようにするため。
+    """
+    body = """
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>ページが見つかりません</h1>
+        <p>お探しのページは、移動または削除された可能性があります。</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">404</span>
+          <h2>次のいずれかからお探しください</h2>
+        </div>
+        <div class="section-actions">
+          <a href="/" class="btn btn-primary">ホームへ</a>
+          <a href="/apps.html" class="btn btn-outline">アプリ一覧</a>
+          <a href="/support.html" class="btn btn-outline">サポート</a>
+          <a href="/privacy.html" class="btn btn-outline">プライバシーポリシー</a>
+        </div>
+        <p style="text-align: center; margin-top: var(--space-6);">
+          見つからない場合は <a href="mailto:%(mail)s">%(mail)s</a> までお知らせください。
+        </p>
+      </div>
+    </section>
+  </main>
+""" % dict(mail=MAIL)
+
+    html = (
+        head("", "ページが見つかりません — Aju Works",
+             "お探しのページは移動または削除された可能性があります。",
+             "%s/404.html" % SITE)
+        + header("") + body + footer("")
+    )
+    # 検索結果に載せない
+    html = html.replace("</head>", '  <meta name="robots" content="noindex">\n</head>', 1)
+    write(os.path.join(ROOT, "404.html"), html)
+
+
 def write(path, text):
     d = os.path.dirname(path)
     if d and not os.path.isdir(d):
@@ -1008,4 +1071,5 @@ if __name__ == "__main__":
     build_apps()
     for a in APPS:
         build_detail(a)
+    build_404()
     print("apps:", len(APPS))
