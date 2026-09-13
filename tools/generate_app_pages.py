@@ -18,12 +18,11 @@ APPS = [
     slug="gym-record",
     name="筋トレ記録＆ベンチコーチ",
     short="筋トレ記録＆ベンチコーチ",
-
     app_id="com.atushi.benchcoach",
     tagline="重量・回数・セット数を記録して、ベンチプレス100kgへ。",
     category="健康・フィットネス",
-    status="prep",
-    play=None,
+    status="live",
+    play="https://play.google.com/store/apps/details?id=com.atushi.benchcoach",
     icon="gym-record.png",
     card="重量・回数・セット数の記録と次回メニュー提案で、筋トレの継続を支えるアプリ。Wear OS対応。",
     overview=[
@@ -47,7 +46,7 @@ APPS = [
       ("主要な権限", "インターネット / バイブレーション / 課金 / 広告ID / Health Connect への運動記録の書き込み"),
     ],
     privacy=("https://gym-record-bench-coach-policy.vercel.app/privacy", "専用プライバシーポリシーを見る", True),
-    badges=[("badge-android", "Android"), ("badge-free", "Wear OS対応"), ("badge-coming-soon", "公開準備中")],
+    badges=[("badge-android", "Android"), ("badge-free", "基本無料"), ("badge-free", "Wear OS対応")],
     note="提案メニューは、ベンチプレス100kgを目指す方向けの内容を中心にしつつ、マシン中心でトレーニングする方にも使いやすい構成を想定しています。",
   ),
   dict(
