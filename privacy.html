@@ -66,7 +66,7 @@
 
           <!-- 文書メタ情報 -->
           <div class="document-meta">
-            <span><strong>制定:</strong> 2026年5月 ／ <strong>最終更新:</strong> 2026年9月（ヨミオク、ここシェア、Night Fade、WatchIt、リンクポケット、深夜ホテル 追加／Health Connect・広告の記載を現行実装に合わせて修正／アプリ名をGoogle Playの掲載名に統一／公開状況を実態に合わせて更新／ヨミオクに会員登録の有無とデータ削除の案内を追加／ヨミオクに音声入力と図表画像の記載を追加）</span>
+            <span><strong>制定:</strong> 2026年5月 ／ <strong>最終更新:</strong> 2026年9月（公開状況・Wear OS対応状況・各アプリのデータ取扱いを現行実装に合わせて更新）</span>
             <span><strong>事業者:</strong> Aju Works（個人事業）</span>
           </div>
 
@@ -82,86 +82,100 @@
               各アプリ・サービスが固有のプライバシーポリシーを別途定めている場合は、そちらを優先してご確認ください。
               固有のポリシーを定めていないアプリについては、本ポリシーが適用されます。
             </p>
-            <p>本ポリシーの対象となるアプリは以下のとおりです。</p>
+            <p>本ポリシーの対象となるアプリは以下のとおりです。公開状況・Google Playリンクは <code>tools/generate_app_pages.py</code> のアプリ台帳から自動生成しており、<a href="apps.html">アプリ一覧</a>と常に一致します。</p>
             <div style="overflow-x: auto;">
+<!-- APPS_TABLE_START -->
               <table class="info-table">
                 <thead>
                   <tr>
                     <th>アプリ名</th>
                     <th>アプリID</th>
+                    <th>対応端末</th>
                     <th>公開状況</th>
                     <th>ポリシー</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>筋トレ記録＆ベンチコーチ</td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.atushi.benchcoach" target="_blank" rel="noopener noreferrer">筋トレ記録＆ベンチコーチ</a></td>
                     <td><code>com.atushi.benchcoach</code></td>
-                    <td>公開準備中</td>
-                    <td>別途固有ポリシーあり（<a href="https://gym-record-bench-coach-policy.vercel.app/privacy" target="_blank" rel="noopener noreferrer">専用ポリシー</a>）。本ポリシーでは<a href="#gym-record">概要とHealth Connect連携</a>を記載</td>
+                    <td>Android / Wear OS</td>
+                    <td>公開中</td>
+                    <td>別途固有ポリシーあり（<a href="https://gym-record-bench-coach-policy.vercel.app/privacy" target="_blank" rel="noopener noreferrer">専用ポリシー</a>）。本ポリシーでは<a href="#gym-record">Wear OS版の概要とHealth Connect連携</a>を記載</td>
                   </tr>
                   <tr>
-                    <td>FANVOLT｜推し活記録・支出管理<br><small>アプリ内の表示名: FANVOLT</small></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.ajuworks.fanvolt" target="_blank" rel="noopener noreferrer">FANVOLT｜推し活記録・支出管理</a></td>
                     <td><code>com.ajuworks.fanvolt</code></td>
+                    <td>Android / Wear OS</td>
                     <td>公開中</td>
                     <td>本ポリシーを適用（<a href="#fanvolt">第6章</a>）</td>
                   </tr>
                   <tr>
-                    <td>サブスク管理｜解約ナビ・固定費整理<br><small>アプリ内の表示名: サブスク整理</small></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.atush.cancelnav" target="_blank" rel="noopener noreferrer">サブスク管理｜解約ナビ・固定費整理</a><br><small>アプリ内の表示名: サブスク整理</small></td>
                     <td><code>com.atush.cancelnav</code></td>
-                    <td>公開準備中</td>
+                    <td>Android</td>
+                    <td>公開中</td>
                     <td>本ポリシーを適用（<a href="#cancel-nav">第6章</a>）</td>
                   </tr>
                   <tr>
-                    <td>スマホ使いすぎ防止｜アプリ制限・集中<br><small>アプリ内の表示名: Focus Gate</small></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.ajuworks.focusgate" target="_blank" rel="noopener noreferrer">スマホ使いすぎ防止｜アプリ制限・集中</a><br><small>アプリ内の表示名: Focus Gate</small></td>
                     <td><code>com.ajuworks.focusgate</code></td>
-                    <td>公開準備中</td>
+                    <td>Android</td>
+                    <td>公開中</td>
                     <td>本ポリシーを適用（<a href="#focus-gate">第6章</a>）</td>
                   </tr>
                   <tr>
-                    <td>血圧手帳｜歩数・健康記録<br><small>アプリ内の表示名: 歩数・血圧手帳</small></td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.ajuworks.stepbpdiary" target="_blank" rel="noopener noreferrer">血圧手帳｜歩数・健康記録</a><br><small>アプリ内の表示名: 歩数・血圧手帳</small></td>
                     <td><code>com.ajuworks.stepbpdiary</code></td>
-                    <td>公開準備中</td>
+                    <td>Android</td>
+                    <td>公開中</td>
                     <td>本ポリシーを適用（<a href="#step-bp-diary">第6章</a>）</td>
                   </tr>
                   <tr>
                     <td>ヨミオク｜読書を記憶に残す<br><small>開発時の名称: ReadRecall（読書記憶）</small></td>
                     <td><code>com.ajuworks.readrecall</code></td>
+                    <td>Android</td>
                     <td>公開準備中</td>
                     <td>本ポリシーを適用（<a href="#yomioku">第6章</a>） ／ <a href="#yomioku-data-deletion">データ削除について</a></td>
                   </tr>
                   <tr>
                     <td>ここシェア</td>
                     <td><code>com.ajuworks.kokoshare</code></td>
+                    <td>Android</td>
                     <td>公開準備中</td>
                     <td>本ポリシーを適用（<a href="#kokoshare">第6章</a>）</td>
                   </tr>
                   <tr>
-                    <td>Night Fade</td>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.ajuworks.nightfade" target="_blank" rel="noopener noreferrer">Night Fade｜ブルーライトフィルター</a><br><small>アプリ内の表示名: Night Fade</small></td>
                     <td><code>com.ajuworks.nightfade</code></td>
-                    <td>公開準備中</td>
+                    <td>Android</td>
+                    <td>公開中</td>
                     <td>本ポリシーを適用（<a href="#night-fade">第6章</a>）</td>
                   </tr>
                   <tr>
                     <td>WatchIt</td>
                     <td><code>com.ajuworks.watchit</code></td>
+                    <td>Android</td>
                     <td>公開準備中</td>
                     <td>本ポリシーを適用（<a href="#watchit">第6章</a>）</td>
                   </tr>
                   <tr>
                     <td>リンクポケット</td>
                     <td><code>com.ajuworks.linkpocket</code></td>
+                    <td>Android</td>
                     <td>公開準備中</td>
                     <td>本ポリシーを適用（<a href="#linkpocket">第6章</a>）</td>
                   </tr>
                   <tr>
                     <td>深夜ホテル</td>
                     <td><code>com.ajuworks.midnighthotel</code></td>
+                    <td>Android</td>
                     <td>公開準備中</td>
                     <td>本ポリシーを適用（<a href="#midnight-hotel">第6章</a>）</td>
                   </tr>
                 </tbody>
               </table>
+<!-- APPS_TABLE_END -->
             </div>
             <p>
               「公開準備中」のアプリは、Google Playでの公開に向けた準備を進めている段階のものです。
@@ -266,6 +280,18 @@
             <h3 id="fanvolt" style="font-size: var(--font-size-md); font-weight: 700; margin-top: var(--space-6); margin-bottom: var(--space-3); color: var(--color-text);">FANVOLT｜推し活記録・支出管理</h3>
 
             <p>FANVOLTは、推し活の記録・予定・支出・メモ等を管理するためのアプリです。</p>
+
+            <p><strong>Wear OS版について</strong></p>
+            <p>
+              本アプリはAndroidスマートフォンおよびWear OS対応スマートウォッチで利用できます。
+              スマートフォン版とWear OS版は同一のアプリID（<code>com.ajuworks.fanvolt</code>）でGoogle Playに
+              1本のアプリとして掲載されています。Wear OS版では、スマートフォン側の熱量スコアや直近の記録を
+              確認できるほか、カテゴリ・タイトル・時間・金額などの簡易な記録をスマートウォッチから直接
+              追加できます。この記録は、スマートフォン版が保存する情報（上記「保存する情報」参照）と
+              同じ種類のもので、Android標準のWearable Data Layer API（Google Play開発者サービス）を通じて
+              ペアリング済みのスマートフォンへ同期されます。Aju Worksや第三者のサーバーを経由しません。
+              Wear OS版は位置情報・センサー情報を取得しません。
+            </p>
 
             <p><strong>保存する情報</strong></p>
             <p>本アプリでは、ユーザーが入力した以下の情報を端末内に保存します。</p>
@@ -797,10 +823,10 @@
             <p>アプリをアンインストールした場合、端末内に保存された進行状況は削除されます。</p>
           </div>
 
-          <!-- Health Connect / 筋トレ記録＆ベンチコーチ -->
+          <!-- Health Connect / Wear OS / 筋トレ記録＆ベンチコーチ -->
           <div class="doc-chapter">
             <span id="gym-record"></span>
-            <h2><span class="chapter-num">HC</span>筋トレ記録＆ベンチコーチとHealth Connect連携</h2>
+            <h2><span class="chapter-num">HC</span>筋トレ記録＆ベンチコーチ（Wear OS版・Health Connect連携）</h2>
             <p>
               筋トレ記録＆ベンチコーチ（<code>com.atushi.benchcoach</code>）には別途固有のプライバシーポリシーがあり、
               同アプリのデータの取り扱いについては、以下の専用ポリシーを優先してご確認ください。
@@ -811,7 +837,47 @@
               </a>
             </p>
             <p>
-              本章では、Google Playの要求に応じて、同アプリのHealth Connect連携についてのみ記載します。
+              本章では、Google Playの要求に応じて、同アプリのWear OS版とHealth Connect連携についてのみ記載します。
+            </p>
+
+            <p><strong>Wear OS版について</strong></p>
+            <p>
+              本アプリはAndroidスマートフォンおよびWear OS対応スマートウォッチで利用できます。
+              スマートフォン版とWear OS版は同一のアプリID（<code>com.atushi.benchcoach</code>）でGoogle Playに
+              1本のアプリとして掲載されており、スマートウォッチにはスマートフォンから自動的に配信されます。
+              別アプリ・別のプライバシーポリシーではありません。
+            </p>
+
+            <p><strong>Phone / Wear間の同期</strong></p>
+            <p>
+              Wear OS版で記録した筋力トレーニング（種目・重量・回数・セット数）は、Android標準の
+              Wearable Data Layer API（Google Play開発者サービス）を通じて、ペアリング済みのスマートフォン側の
+              アプリへ同期されます。この通信はペアリングされた自分の端末間で行われ、Aju Worksや第三者の
+              サーバーを経由しません。スマートフォン側からは、当日の提案メニュー・前回の記録・登録種目の一覧が
+              同じ仕組みでWear OS版へ配信されます。
+            </p>
+            <p>
+              Wear OS版のランニング記録（後述の距離・心拍数等）は、この同期の対象ではありません。
+              スマートウォッチの端末内にのみ保存され、スマートフォンへは送信されません。
+            </p>
+
+            <p><strong>Wear OS版が使用するセンサー・位置情報</strong></p>
+            <p>
+              Wear OS版には、筋力トレーニングの記録機能に加えて、ランニングを計測する機能があります。
+              ランニング計測を使う場合、Android Health Services（身体活動・心拍数センサー）と、
+              GPSによる位置情報（おおよその位置・正確な位置）を、計測中のみ取得します。
+              位置情報は、移動距離とペースを計算する目的にのみ使用し、住所や訪問先の特定、
+              広告配信、Aju Worksや第三者のサーバーへの送信は行いません。取得した位置情報は
+              距離の数値に変換された後、スマートウォッチの端末内データベースにのみ保存されます。
+              筋力トレーニングの記録（重量・回数・セット数の入力）には位置情報を使用しません。
+            </p>
+            <p>
+              ランニング計測中は、スマートウォッチの通知欄に常時表示される通知（Foreground Service /
+              Ongoing Activity）で計測中であることを示します。この通知は経過時間・距離等の
+              計測状況を表示するための機能であり、通知の仕組み自体が新たな個人情報を収集することはありません。
+              筋力トレーニング中も、同様の常時通知とタイル（ホーム画面直下のタイル面に次のセット内容を
+              表示する機能）を提供しますが、いずれも上記でご説明したトレーニング記録・センサー情報の
+              範囲内で動作し、それ以上の情報を取得するものではありません。
             </p>
 
             <p><strong>Health Connectへ書き込むデータ</strong></p>
@@ -843,6 +909,8 @@
               本アプリがHealth Connect関連の健康データをAju Worksのサーバーへ送信することはありません。
               ユーザーはAndroidのHealth Connect設定から、いつでも権限を取り消せます。
               アプリ内のトレーニング記録は、アプリの削除機能またはアプリのアンインストールにより削除できます。
+              Wear OS版のランニング記録は、Wear OS版アプリの削除、またはスマートウォッチとスマートフォンの
+              ペアリング解除に伴うデータ消去により削除されます。
             </p>
           </div>
 

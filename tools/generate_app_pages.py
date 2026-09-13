@@ -4,6 +4,7 @@
 掲載内容は各アプリの AndroidManifest / build.gradle / app.json / strings.xml /
 README / リリース資料で確認できた事実のみ。確認できないものは掲載しない。
 """
+import io
 import os
 
 SITE = "https://ajuworks.github.io"
@@ -19,10 +20,17 @@ APPS = [
     name="筋トレ記録＆ベンチコーチ",
     short="筋トレ記録＆ベンチコーチ",
     app_id="com.atushi.benchcoach",
+    platform="Android / Wear OS",
     tagline="重量・回数・セット数を記録して、ベンチプレス100kgへ。",
     category="健康・フィットネス",
     status="live",
     play="https://play.google.com/store/apps/details?id=com.atushi.benchcoach",
+    privacy_anchor="gym-record",
+    privacy_note=(
+      '別途固有ポリシーあり（<a href="https://gym-record-bench-coach-policy.vercel.app/privacy" '
+      'target="_blank" rel="noopener noreferrer">専用ポリシー</a>）。'
+      '本ポリシーでは<a href="#gym-record">Wear OS版の概要とHealth Connect連携</a>を記載'
+    ),
     icon="gym-record.png",
     card="重量・回数・セット数の記録と次回メニュー提案で、筋トレの継続を支えるアプリ。Wear OS対応。",
     overview=[
@@ -53,12 +61,13 @@ APPS = [
     slug="fanvolt",
     name="FANVOLT｜推し活記録・支出管理",
     short="FANVOLT",
-
     app_id="com.ajuworks.fanvolt",
+    platform="Android / Wear OS",
     tagline="推し活の記録・予定・支出を、貼るだけで残す。",
     category="ライフスタイル",
     status="live",
     play="https://play.google.com/store/apps/details?id=com.ajuworks.fanvolt",
+    privacy_anchor="fanvolt",
     icon="fanvolt.svg",
     card="推し活の記録・予定・支出・メモを一元管理。画像を貼るだけで日付や金額を読み取ります。",
     overview=[
@@ -90,10 +99,12 @@ APPS = [
     short="サブスク整理",
     store_name="サブスク管理｜解約ナビ・固定費整理",
     app_id="com.atush.cancelnav",
+    platform="Android",
     tagline="契約経路から、解約ページへ最短で。",
     category="家計・ツール",
     status="live",
     play="https://play.google.com/store/apps/details?id=com.atush.cancelnav",
+    privacy_anchor="cancel-nav",
     icon="subscription-manager.png",
     card="サブスクの金額と更新日を管理し、契約経路に応じた公式の解約手続きへ案内します。",
     overview=[
@@ -125,10 +136,12 @@ APPS = [
     short="Focus Gate",
     store_name="スマホ使いすぎ防止｜アプリ制限・集中",
     app_id="com.ajuworks.focusgate",
+    platform="Android",
     tagline="開く前に、理由と少しの待ち時間を。",
     category="生産性・自己管理",
     status="live",
     play="https://play.google.com/store/apps/details?id=com.ajuworks.focusgate",
+    privacy_anchor="focus-gate",
     icon="focus-gate.png",
     card="選んだアプリを開くとき、理由の入力と待機を求めて無意識な利用に気づきを促します。",
     overview=[
@@ -160,10 +173,12 @@ APPS = [
     short="歩数・血圧手帳",
     store_name="血圧手帳｜歩数・健康記録",
     app_id="com.ajuworks.stepbpdiary",
+    platform="Android",
     tagline="歩数・血圧・体重・食事を、広告なしで記録する。",
     category="健康・フィットネス",
     status="live",
     play="https://play.google.com/store/apps/details?id=com.ajuworks.stepbpdiary",
+    privacy_anchor="step-bp-diary",
     icon="step-bp-diary.png",
     card="歩数・血圧・体重・食事を一元管理する非医療用の健康記録手帳。広告・外部送信なし。",
     overview=[
@@ -200,11 +215,15 @@ APPS = [
     slug="yomioku",
     name="ヨミオク｜読書を記憶に残す",
     short="ヨミオク",
+    name_note="開発時の名称: ReadRecall（読書記憶）",
     app_id="com.ajuworks.readrecall",
+    platform="Android",
     tagline="読んだものを、自分の中に残す。",
     category="教育・読書",
     status="prep",
     play=None,
+    privacy_anchor="yomioku",
+    privacy_note='本ポリシーを適用（<a href="#yomioku">第6章</a>） ／ <a href="#yomioku-data-deletion">データ削除について</a>',
     icon="yomioku.svg",
     card="本から得たことを軽く残し、後日思い出し、別の本とつなぐ。要点づくりは端末内AIで行います。",
     overview=[
@@ -248,10 +267,12 @@ APPS = [
     name="ここシェア",
     short="ここシェア",
     app_id="com.ajuworks.kokoshare",
+    platform="Android",
     tagline="いざというときの連絡先と備えを、手元にまとめる。",
     category="安全・防災",
     status="prep",
     play=None,
+    privacy_anchor="kokoshare",
     icon="kokoshare.png",
     card="家族の連絡先・防災メモ・備蓄・安否の共有文を端末内にまとめる防災アプリ。",
     overview=[
@@ -284,10 +305,12 @@ APPS = [
     short="Night Fade",
     store_name="Night Fade｜ブルーライトフィルター",
     app_id="com.ajuworks.nightfade",
+    platform="Android",
     tagline="就寝時刻に向けて、画面をゆっくり暗く・暖色へ。",
     category="生産性・自己管理",
     status="live",
     play="https://play.google.com/store/apps/details?id=com.ajuworks.nightfade",
+    privacy_anchor="night-fade",
     icon="night-fade.svg",
     card="夜の時間経過に合わせて画面を暗く暖色寄りに変え、朝は徐々に戻す完全オフラインのアプリ。",
     overview=[
@@ -318,10 +341,12 @@ APPS = [
     name="WatchIt",
     short="WatchIt",
     app_id="com.ajuworks.watchit",
+    platform="Android",
     tagline="変わったら教えて。ページの更新を端末自身が見張る。",
     category="ツール",
     status="prep",
     play=None,
+    privacy_anchor="watchit",
     icon="watchit.svg",
     card="登録したWebページを端末自身が定期確認し、意味のある変化だけをローカル通知します。",
     overview=[
@@ -353,10 +378,12 @@ APPS = [
     name="リンクポケット",
     short="リンクポケット",
     app_id="com.ajuworks.linkpocket",
+    platform="Android",
     tagline="Chromeに残さないリンク管理。",
     category="ツール",
     status="prep",
     play=None,
+    privacy_anchor="linkpocket",
     icon="linkpocket.svg",
     card="共有メニューからURLを端末内に保存。Chromeのブックマークを使わずにリンクを整理します。",
     overview=[
@@ -386,10 +413,12 @@ APPS = [
     name="深夜ホテル",
     short="深夜ホテル",
     app_id="com.ajuworks.midnighthotel",
+    platform="Android",
     tagline="昼はホテル経営。夜は、何かがおかしい。",
     category="ゲーム",
     status="prep",
     play=None,
+    privacy_anchor="midnight-hotel",
     icon="midnight-hotel.svg",
     card="昼の経営判断が夜の出来事に返ってくる、客室8室のホテル経営ゲーム。完全オフライン。",
     overview=[
@@ -1059,6 +1088,105 @@ def build_404():
     write(os.path.join(ROOT, "404.html"), html)
 
 
+def build_privacy_app_table():
+    """privacy.html 冒頭の「対象アプリ一覧」表を APPS から生成する。
+
+    アプリ名・アプリID・対応端末・公開状況・ポリシー欄は、apps.html / 各アプリ詳細ページと
+    同じ APPS 台帳から作るため、片方だけ更新して食い違う事態を防ぐ。
+    """
+    rows = []
+    for app in APPS:
+        _cls, status_label = STATUS_LABEL[app["status"]]
+        primary_name = app.get("store_name") or app["name"]
+        if app.get("name_note"):
+            footnote = app["name_note"]
+        elif app.get("store_name") and app["short"] != primary_name:
+            footnote = "アプリ内の表示名: %s" % app["short"]
+        else:
+            footnote = None
+        if app["status"] == "live" and app.get("play"):
+            primary_name = '<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>' % (app["play"], primary_name)
+        name_cell = primary_name + ("<br><small>%s</small>" % footnote if footnote else "")
+        policy_cell = app.get("privacy_note") or (
+            '本ポリシーを適用（<a href="#%s">第6章</a>）' % app.get("privacy_anchor", app["slug"])
+        )
+        rows.append(
+            "                  <tr>\n"
+            "                    <td>%s</td>\n"
+            "                    <td><code>%s</code></td>\n"
+            "                    <td>%s</td>\n"
+            "                    <td>%s</td>\n"
+            "                    <td>%s</td>\n"
+            "                  </tr>" % (
+                name_cell, app["app_id"], app.get("platform", "Android"), status_label, policy_cell,
+            )
+        )
+    return (
+        '              <table class="info-table">\n'
+        "                <thead>\n"
+        "                  <tr>\n"
+        "                    <th>アプリ名</th>\n"
+        "                    <th>アプリID</th>\n"
+        "                    <th>対応端末</th>\n"
+        "                    <th>公開状況</th>\n"
+        "                    <th>ポリシー</th>\n"
+        "                  </tr>\n"
+        "                </thead>\n"
+        "                <tbody>\n"
+        + "\n".join(rows) + "\n"
+        "                </tbody>\n"
+        "              </table>"
+    )
+
+
+def update_privacy_html():
+    """privacy.html の APPS_TABLE マーカー間だけを、生成した表へ差し替える。"""
+    path = os.path.join(ROOT, "privacy.html")
+    html = io.open(path, encoding="utf-8").read()
+    start_marker = "<!-- APPS_TABLE_START -->"
+    end_marker = "<!-- APPS_TABLE_END -->"
+    if start_marker not in html or end_marker not in html:
+        raise SystemExit(
+            "privacy.html に APPS_TABLE マーカーが見つからない。"
+            "手動で<!-- APPS_TABLE_START -->と<!-- APPS_TABLE_END -->を対象アプリ一覧の<table>の位置へ入れてから再実行してください。"
+        )
+    start_i = html.index(start_marker) + len(start_marker)
+    end_i = html.index(end_marker)
+    table_html = build_privacy_app_table()
+    new_html = html[:start_i] + "\n" + table_html + "\n" + html[end_i:]
+    io.open(path, "w", encoding="utf-8", newline="\n").write(new_html)
+    print("wrote", path, len(new_html), "bytes (APPS_TABLE updated)")
+
+
+def check_status_consistency():
+    """apps.html（＝APPS台帳）と privacy.html の公開状況が食い違っていないか機械確認する。"""
+    priv_path = os.path.join(ROOT, "privacy.html")
+    html = io.open(priv_path, encoding="utf-8").read()
+    start_marker = "<!-- APPS_TABLE_START -->"
+    end_marker = "<!-- APPS_TABLE_END -->"
+    table_segment = html[html.index(start_marker):html.index(end_marker)]
+    mismatches = []
+    for app in APPS:
+        _cls, expected_label = STATUS_LABEL[app["status"]]
+        app_id_marker = "<code>%s</code>" % app["app_id"]
+        if app_id_marker not in table_segment:
+            mismatches.append("%s: privacy.htmlの表に行が無い" % app["slug"])
+            continue
+        row_start = table_segment.index(app_id_marker)
+        row_end = table_segment.index("</tr>", row_start)
+        row = table_segment[row_start:row_end]
+        if expected_label not in row:
+            mismatches.append(
+                "%s: apps.html側は「%s」だが privacy.html の表は一致しない" % (app["slug"], expected_label)
+            )
+    if mismatches:
+        print("!! privacy.html と apps.html の公開状況が一致していません:")
+        for m in mismatches:
+            print("   -", m)
+        raise SystemExit(1)
+    print("OK: apps.html と privacy.html の公開状況は全%d件一致" % len(APPS))
+
+
 def write(path, text):
     d = os.path.dirname(path)
     if d and not os.path.isdir(d):
@@ -1074,4 +1202,6 @@ if __name__ == "__main__":
     for a in APPS:
         build_detail(a)
     build_404()
+    update_privacy_html()
+    check_status_consistency()
     print("apps:", len(APPS))
