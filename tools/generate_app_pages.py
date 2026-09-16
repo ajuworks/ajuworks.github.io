@@ -566,7 +566,7 @@ def footer(prefix):
         <div class="footer-nav-group">
           <h4>お問い合わせ</h4>
           <ul>
-            <li><a href="mailto:%(mail)s">%(mail)s</a></li>
+            <li><a href="%(p)ssupport.html">サポート・お問い合わせ</a></li>
           </ul>
         </div>
       </div>
@@ -992,8 +992,7 @@ def build_detail(app):
           <p>不具合のご報告・ご要望はメールにて受け付けています。</p>
         </div>
         <div class="contact-cta-box" style="max-width: 620px; margin: 0 auto; text-align: center;">
-          <p><a href="mailto:%(mail)s">%(mail)s</a></p>
-          <p class="mt-4"><a href="%(p)ssupport.html" class="btn btn-primary">サポートページへ</a></p>
+          <p><a href="%(p)ssupport.html" class="btn btn-primary">サポートページへ</a></p>
         </div>
       </div>
     </section>
@@ -1058,7 +1057,7 @@ def build_404():
           <a href="/privacy.html" class="btn btn-outline">プライバシーポリシー</a>
         </div>
         <p style="text-align: center; margin-top: var(--space-6);">
-          見つからない場合は <a href="mailto:%(mail)s">%(mail)s</a> までお知らせください。
+          見つからない場合は <a href="support.html">サポートページ</a> からお知らせください。
         </p>
       </div>
     </section>
