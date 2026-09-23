@@ -558,6 +558,7 @@ def footer(prefix):
           <h4>ポリシー</h4>
           <ul>
             <li><a href="%(p)sprivacy.html">プライバシーポリシー</a></li>
+            <li><a href="%(p)sprivacy/">アプリ別プライバシーポリシー</a></li>
             <li><a href="%(p)sterms.html">利用規約</a></li>
           </ul>
         </div>
