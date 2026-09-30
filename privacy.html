@@ -66,7 +66,7 @@
 
           <!-- 文書メタ情報 -->
           <div class="document-meta">
-            <span><strong>制定:</strong> 2026年5月 ／ <strong>最終更新:</strong> 2026年9月（公開状況・Wear OS対応状況・各アプリのデータ取扱いを現行実装に合わせて更新）</span>
+            <span><strong>制定:</strong> 2026年5月 ／ <strong>最終更新:</strong> 2026年10月（ヨミオクのGoogle AdMob・UMP導入を反映）</span>
             <span><strong>事業者:</strong> Aju Works（個人事業）</span>
           </div>
 
@@ -571,7 +571,7 @@
               自動で割り当てられる表示名、ネタバレの有無を送信します。
             </p>
             <p>
-              メモの全文、OCRの結果、撮影画像、氏名、メールアドレス、電話番号、連絡先、位置情報、広告IDは送信しません。
+              メモの全文、OCRの結果、撮影画像、Recallの問題・回答・評価内容、氏名、メールアドレス、電話番号、連絡先、位置情報は、広告配信目的で送信しません。
             </p>
 
             <p><strong>AIの処理について</strong></p>
@@ -602,11 +602,27 @@
                 — 処理は端末内で行われますが、ML Kit自身がGoogleへ利用状況・診断情報を送信することがあります。
                 読み取った文字やメモの内容は含まれません。</li>
               <li>Google Books API、openBD（書誌情報の検索。検索語のみを送信）</li>
+              <li>Google AdMob（Google Mobile Ads SDK。ホーム画面と通常の復習完了後の広告表示）</li>
+              <li>Google User Messaging Platform（EU・英国等、同意が必要な地域での同意確認）</li>
               <li>Google Android バックアップ（利用者が端末で有効にしている場合のバックアップと復元）</li>
             </ul>
 
             <p><strong>広告</strong></p>
-            <p>本アプリは広告配信SDK、アクセス解析、トラッキングを使用していません。</p>
+            <p>
+              本アプリは Google AdMob（Google Mobile Ads SDK）を利用し、ホーム画面にバナー広告、
+              通常の「今日の復習」をすべて終えた直後にインタースティシャル広告を表示することがあります。
+              インタースティシャル広告はアプリ側で1日最大1回に制限します。
+            </p>
+            <p>
+              EU・英国など同意が必要な地域では、Google User Messaging Platform（UMP）で同意を確認し、
+              広告リクエストが許可された場合だけ広告を読み込みます。同意を拒否した場合や、同意確認・広告取得に
+              失敗した場合も、広告を除くアプリの機能は利用できます。
+            </p>
+            <p>
+              Google Mobile Ads SDKは、広告配信、効果測定、不正防止などのために端末情報、広告識別子、
+              IPアドレス、広告操作情報等を取り扱う場合があります。読書メモ、OCR本文、撮影・保存した画像、
+              Recallの問題・回答・評価内容を広告配信目的でGoogleへ送信することはありません。
+            </p>
 
             <p><strong>権限</strong></p>
             <ul>
