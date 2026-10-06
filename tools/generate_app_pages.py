@@ -220,8 +220,8 @@ APPS = [
     platform="Android",
     tagline="読んだものを、自分の中に残す。",
     category="教育・読書",
-    status="prep",
-    play=None,
+    status="live",
+    play="https://play.google.com/store/apps/details?id=com.ajuworks.readrecall",
     privacy_anchor="yomioku",
     privacy_note='本ポリシーを適用（<a href="#yomioku">第6章</a>） ／ <a href="#yomioku-data-deletion">データ削除について</a>',
     icon="yomioku.svg",
@@ -230,7 +230,6 @@ APPS = [
       "本から得たことを軽く残し、後日思い出し、別の本とつなぎ、他の読者の異なる視点を自分の理解へ取り込む——という流れを1つのアプリにしたものです。開発時の名称は ReadRecall（読書記憶）です。",
       "メモの要点づくり・本同士のつながり判定・視点の統合は、すべて端末内のAIで行います。メモの内容が外部のAIサービスへ送られることはありません。端末が端末内AIに対応していない場合は、AIを使わず、書いた言葉をそのまま要点として扱います。",
       "文章の取り込みは、撮影したあとで残したい範囲を囲む方式です。撮るときにページを枠へきっちり合わせる必要はありません。図・表・グラフは文字に直さず、画像のまま残せます。",
-      "現在は公開準備中です。Google Play への提出前の確認作業を進めています。",
     ],
     features=[
       "本の登録（ISBNバーコード読み取り・書誌情報の検索）",
@@ -259,7 +258,7 @@ APPS = [
     ],
     privacy=("../privacy.html#yomioku", "プライバシーポリシーを見る", False),
     extra_links=[("../privacy.html#yomioku-data-deletion", "データ削除について", False)],
-    badges=[("badge-android", "Android"), ("badge-coming-soon", "公開準備中")],
+    badges=[("badge-android", "Android"), ("badge-free", "基本無料")],
     note="カメラを許可しなくても、本の登録とメモの作成はできます。",
   ),
   dict(
@@ -443,10 +442,133 @@ APPS = [
     badges=[("badge-android", "Android"), ("badge-coming-soon", "公開準備中")],
     note=None,
   ),
+  dict(
+    slug="worklog",
+    name="WorkLog - 勤務時間・タイムカード記録",
+    short="WorkLog",
+    app_id="com.ajuworks.worklog",
+    platform="Android",
+    tagline="出勤・休憩・退勤をタップするだけ。勤務時間をかんたん記録。",
+    category="仕事効率化",
+    status="live",
+    play="https://play.google.com/store/apps/details?id=com.ajuworks.worklog",
+    privacy_anchor="worklog",
+    privacy_note='<a href="privacy/worklog/">専用ポリシー</a>（共通ポリシーも併せて適用）',
+    icon="worklog.png",
+    card="出勤・休憩・退勤を押すだけで勤務時間を記録。日・週・月ごとの集計とCSV書き出しに対応。",
+    overview=[
+      "出勤・休憩・退勤のボタンを押すだけで、自分の勤務時間を記録するシンプルなアプリです。休憩は何回でも記録でき、勤務時間と休憩時間は自動で計算されます。",
+      "日別・週別・月別の勤務時間を確認でき、22時から翌6時のような日をまたぐ勤務にも対応します。打刻を忘れた日は、あとから手入力で追加・修正できます。",
+      "勤務記録は端末内に保存され、アカウント登録やログインは必要ありません。給与計算や勤怠管理システムではなく、自分用の勤務時間記録アプリです。",
+    ],
+    features=[
+      "出勤・休憩・退勤のワンタップ記録（休憩は複数回に対応）",
+      "勤務時間・休憩時間の自動計算",
+      "日別・週別・月別の勤務時間の確認",
+      "日をまたぐ勤務に対応",
+      "勤務履歴の確認と、手入力での追加・修正",
+      "月ごとの勤務記録をCSVで書き出し・共有",
+      "打刻忘れを知らせるリマインダー通知",
+      "ホーム画面ウィジェット",
+    ],
+    facts=[
+      ("会員登録", "アカウント登録・ログインは不要です。"),
+      ("データ保存場所", "出勤・退勤・休憩の日時、勤務履歴、設定は端末内のデータベースに保存し、Aju Worksのサーバーへ送信しません。"),
+      ("CSV書き出し", "ユーザーが操作したときだけ作成し、Androidの共有機能で選んだアプリへ渡します。自動送信は行いません。"),
+      ("通知", "打刻忘れの通知は端末内で作られるローカル通知です。プッシュ通知用のサーバーはありません。"),
+      ("広告", "Google AdMobによる広告を表示します（広告識別子を使用）。EU・英国等では、必要に応じてUMPによる同意確認を行います。"),
+      ("位置情報", "GPSによる打刻などの位置情報機能はありません。"),
+      ("主要な権限", "インターネット / ネットワーク状態 / 通知 / 再起動後の起動 / 広告ID"),
+    ],
+    privacy=("../privacy/worklog/", "プライバシーポリシーを見る", False),
+    badges=[("badge-android", "Android"), ("badge-free", "基本無料")],
+    note="勤怠管理システム・給与計算アプリではありません。自分の勤務時間を記録するためのアプリです。",
+  ),
+  dict(
+    slug="pittari-compress",
+    name="ぴったり圧縮 - 画像・PDFをKB/MB以下に",
+    short="ぴったり圧縮",
+    app_id="com.ajuworks.pittari",
+    platform="Android",
+    tagline="写真・PDFを、指定した容量以下にぴったり圧縮。",
+    category="ツール",
+    status="live",
+    play="https://play.google.com/store/apps/details?id=com.ajuworks.pittari",
+    privacy_anchor="pittari-compress",
+    privacy_note='<a href="privacy/pittari-compress/">専用ポリシー</a>（共通ポリシーも併せて適用）',
+    icon="pittari-compress.png",
+    card="写真やPDFを100KB〜10MBや自由指定の容量以下に圧縮。処理は端末内で完結します。",
+    overview=[
+      "写真やPDFを「指定した容量以下」に圧縮するシンプルなアプリです。「500KB以下にしたい」「2MB以下で提出したい」といった場面で、目標の容量を選ぶだけで圧縮できます。",
+      "圧縮処理はすべて端末内で行い、選んだ写真やPDFをAju Worksのサーバーへ送信することはありません。アカウント登録も不要です。",
+    ],
+    features=[
+      "写真の圧縮（最大20枚までまとめて選択）",
+      "PDFの圧縮",
+      "目標容量のプリセット（100KB / 500KB / 1MB / 2MB / 5MB / 10MB）",
+      "20KB〜200MBの範囲での自由入力",
+      "圧縮前後のサイズと削減率の表示",
+      "圧縮したファイルの保存と、他のアプリへの共有",
+      "圧縮履歴の確認（端末内に新しい順で100件まで）",
+    ],
+    facts=[
+      ("会員登録", "アカウント登録・ログインは不要です。"),
+      ("データ処理", "選んだ写真・PDFは端末内で圧縮し、Aju Worksのサーバーへ送信しません。アプリが読み込むのは、写真選択画面・ファイル選択画面でユーザーが選んだファイルだけです。"),
+      ("履歴", "圧縮履歴（日時・ファイル名・容量など）は端末内にのみ保存します。圧縮したファイル自体は履歴として保存しません。"),
+      ("写真の位置情報", "写真の撮影位置（GPS）は、圧縮後のファイルに書き出しません。"),
+      ("PDFの圧縮", "PDFはページを画像にして再構成するため、文字の選択やリンクは使えなくなります。"),
+      ("広告", "Google AdMobによる広告を表示します（広告識別子を使用）。EU・英国等では、必要に応じてUMPによる同意確認を行います。"),
+      ("主要な権限", "インターネット / ネットワーク状態 / 広告ID（写真・ファイルの一覧を読み取る権限は要求しません）"),
+    ],
+    privacy=("../privacy/pittari-compress/", "プライバシーポリシーを見る", False),
+    badges=[("badge-android", "Android"), ("badge-free", "基本無料")],
+    note=None,
+  ),
+  dict(
+    slug="hibi-count",
+    name="日々カウント - 記念日カウントダウン",
+    short="日々カウント",
+    app_id="com.ajuworks.countdown",
+    platform="Android",
+    tagline="記念日や予定の日まで、あと何日かをひと目で。",
+    category="ライフスタイル",
+    status="prep",
+    play=None,
+    privacy_anchor="hibi-count",
+    privacy_note='<a href="privacy/hibi-count/">専用ポリシー</a>（共通ポリシーも併せて適用）',
+    icon="hibi-count.png",
+    card="記念日や予定の日までの日数をカウントダウン。ウィジェットとカレンダー連携に対応。",
+    overview=[
+      "記念日や予定の日までの日数・時間をカウントダウン（過ぎた日からはカウントアップ）で表示するアプリです。",
+      "登録したイベントの情報は端末内にのみ保存します。アカウント登録は不要です。",
+      "現在は公開準備中です。",
+    ],
+    features=[
+      "複数イベントの登録（日時・メモ・背景写真）",
+      "カウントダウン／カウントアップ表示（日数・日と時間・秒の切り替え）",
+      "毎年の繰り返し・お気に入り・並び順の切り替え",
+      "小・中・大のホーム画面ウィジェット",
+      "端末内で作られるローカル通知（30日前・前日・当日・1時間前など）",
+      "端末のカレンダーからの追加／カレンダーへの追加",
+    ],
+    facts=[
+      ("会員登録", "アカウント登録・ログインは不要です。"),
+      ("データ保存場所", "イベント名・日時・メモ・設定は端末内にのみ保存し、Aju Worksのサーバーへ送信しません。"),
+      ("背景写真", "Androidの写真選択画面で選んだ写真だけを縮小して端末内にコピーします。写真の一覧を読み取る権限は要求しません。"),
+      ("カレンダー連携", "使うときだけ端末のカレンダーの読み取り・書き込みの許可を求めます。Google Calendar APIは使わず、端末のカレンダーを利用します。"),
+      ("広告・通信", "現在のバージョンは広告を表示せず、インターネット通信も行いません。"),
+    ],
+    privacy=("../privacy/hibi-count/", "プライバシーポリシーを見る", False),
+    badges=[("badge-android", "Android"), ("badge-coming-soon", "公開準備中")],
+    note=None,
+  ),
 ]
 
+# 公開中のアプリを先に並べる（表・一覧とも安定ソート）
+APPS.sort(key=lambda a: a["status"] != "live")
+
 # ホームに出す代表6本
-HOME_SLUGS = ["fanvolt", "gym-record", "focus-gate", "step-bp-diary", "yomioku", "watchit"]
+HOME_SLUGS = ["fanvolt", "gym-record", "focus-gate", "step-bp-diary", "yomioku", "worklog"]
 
 BY_SLUG = {a["slug"]: a for a in APPS}
 
@@ -1146,6 +1268,59 @@ def update_privacy_html():
     print("wrote", path, len(new_html), "bytes (APPS_TABLE updated)")
 
 
+def _privacy_href(app):
+    """アプリ詳細ページ基準のリンクを、privacy.html（サイトルート）基準に直す。"""
+    url = app["privacy"][0]
+    return url[3:] if url.startswith("../") else url
+
+
+def build_privacy_app_nav():
+    """privacy.html 冒頭の「アプリ別プライバシー情報」（目次）を APPS から生成する。"""
+    def item(app):
+        name = app.get("store_name") or app["name"]
+        links = []
+        if app["status"] == "live" and app.get("play"):
+            links.append('<a href="%s" target="_blank" rel="noopener noreferrer">Google Play</a>' % app["play"])
+        href = _privacy_href(app)
+        if href.startswith("http"):
+            links.append('<a href="%s" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>' % href)
+        else:
+            links.append('<a href="%s">プライバシーポリシー</a>' % href)
+        for url, label, external in app.get("extra_links", []):
+            u = url[3:] if url.startswith("../") else url
+            links.append('<a href="%s">%s</a>' % (u, label))
+        if app["slug"] == "gym-record":
+            links.append('<a href="#gym-record">Wear OS版・Health Connect連携</a>')
+        return "                <li><strong>%s</strong><br>%s</li>" % (name, " ／ ".join(links))
+
+    live = [a for a in APPS if a["status"] == "live"]
+    prep = [a for a in APPS if a["status"] != "live"]
+    return (
+        '          <div class="doc-chapter" id="app-privacy-nav">\n'
+        "            <h2>アプリ別プライバシー情報</h2>\n"
+        "            <p>ご利用のアプリのプライバシー情報へ移動できます。固有のポリシーがあるアプリはそちらを、"
+        "それ以外のアプリは本ポリシー第6章の該当箇所をご覧ください。いずれのアプリにも、本ポリシーの共通部分が適用されます。</p>\n"
+        "            <p><strong>公開中</strong></p>\n"
+        "            <ul>\n" + "\n".join(item(a) for a in live) + "\n            </ul>\n"
+        "            <p><strong>公開準備中</strong></p>\n"
+        "            <ul>\n" + "\n".join(item(a) for a in prep) + "\n            </ul>\n"
+        "          </div>"
+    )
+
+
+def update_privacy_nav():
+    """privacy.html の APP_NAV マーカー間を、生成した目次へ差し替える。"""
+    path = os.path.join(ROOT, "privacy.html")
+    html = io.open(path, encoding="utf-8").read()
+    sm, em = "<!-- APP_NAV_START -->", "<!-- APP_NAV_END -->"
+    if sm not in html or em not in html:
+        raise SystemExit("privacy.html に APP_NAV マーカーが見つからない。")
+    i, j = html.index(sm) + len(sm), html.index(em)
+    html = html[:i] + "\n" + build_privacy_app_nav() + "\n          " + html[j:]
+    io.open(path, "w", encoding="utf-8", newline="\n").write(html)
+    print("wrote", path, "(APP_NAV updated)")
+
+
 def check_status_consistency():
     """apps.html（＝APPS台帳）と privacy.html の公開状況が食い違っていないか機械確認する。"""
     priv_path = os.path.join(ROOT, "privacy.html")
@@ -1191,5 +1366,6 @@ if __name__ == "__main__":
         build_detail(a)
     build_404()
     update_privacy_html()
+    update_privacy_nav()
     check_status_consistency()
     print("apps:", len(APPS))
