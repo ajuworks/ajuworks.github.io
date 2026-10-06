@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>日々カウント - 記念日カウントダウン｜プライバシーポリシー | Aju Works</title>
-  <meta name="description" content="Androidアプリ「日々カウント - 記念日カウントダウン」（com.ajuworks.countdown）のプライバシーポリシー。イベントと背景写真は端末内に保存し、当事業者のサーバーへ送信しません。現在のバージョンは広告を表示せず、通信を行いません。">
+  <meta name="description" content="Androidアプリ「日々カウント - 記念日カウントダウン」（com.ajuworks.countdown）のプライバシーポリシー。イベント・背景写真・カレンダー連携の情報は端末内で処理し、当事業者のサーバーへ送信しません。現在のバージョンは広告を表示せず、通信を行いません。">
   <link rel="canonical" href="https://ajuworks.github.io/privacy/hibi-count/">
 
   <!-- OGP -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="日々カウント - 記念日カウントダウン｜プライバシーポリシー | Aju Works">
-  <meta property="og:description" content="Androidアプリ「日々カウント - 記念日カウントダウン」（com.ajuworks.countdown）のプライバシーポリシー。イベントと背景写真は端末内に保存し、当事業者のサーバーへ送信しません。現在のバージョンは広告を表示せず、通信を行いません。">
+  <meta property="og:description" content="Androidアプリ「日々カウント - 記念日カウントダウン」（com.ajuworks.countdown）のプライバシーポリシー。イベント・背景写真・カレンダー連携の情報は端末内で処理し、当事業者のサーバーへ送信しません。現在のバージョンは広告を表示せず、通信を行いません。">
   <meta property="og:url"         content="https://ajuworks.github.io/privacy/hibi-count/">
   <meta property="og:locale"      content="ja_JP">
 
@@ -143,12 +143,36 @@
             <p>
               通知の受け取りは、端末の設定またはアプリ内のイベント設定から無効にできます。
             </p>
+            <p>
+              イベントごとに任意でオンにできる「イベント時刻のアラーム」も、端末内で作られるローカル通知です。
+              Android の設定で全画面通知が許可されている場合に限り、ロック画面の上にも大きく表示します。
+              指定の時刻に鳴らすため、Android の「アラームとリマインダー」の許可を利用する場合があります（許可がない場合は数分遅れることがあります）。
+            </p>
           </div>
 
           <div class="doc-chapter">
-            <h2><span class="chapter-num">6</span>広告・外部サービス・通信について</h2>
+            <h2><span class="chapter-num">6</span>カレンダー連携</h2>
             <p>
-              現在のバージョン（1.0.0）は広告を表示していません。
+              「カレンダーから追加」「カレンダーに追加」を使う場合に限り、端末のカレンダーの読み取り・書き込みの許可を求めます。
+              許可しなくても、カウントダウン・ウィジェット・通知などの機能はそのまま使えます。
+            </p>
+            <ul>
+              <li>カレンダーから追加: ユーザーが選んだ端末内のカレンダーの予定（タイトル・日時・繰り返し・メモ）を読み取り、確認のうえイベントとして登録します。</li>
+              <li>カレンダーに追加: ユーザーが選んだイベント（名称・日時・繰り返し・メモ）を、ユーザーが選んだ端末内のカレンダーへ予定として追加します。</li>
+              <li>重複を防ぐため、取り込んだ／追加した予定の ID だけをイベントと一緒に端末内に保存します。</li>
+            </ul>
+            <p>
+              カレンダーの情報は端末内で処理され、当事業者のサーバーや第三者へ送信しません。
+              Google Calendar API などのオンラインのサービスは使用せず、Android 端末のカレンダー（Calendar Provider）を利用します。
+              Google カレンダーの予定は、端末に同期されている場合にのみ、この仕組みを通じて利用されます。
+              端末のカレンダーと Google アカウントとの同期は、Android および Google のサービスによって行われます。
+            </p>
+          </div>
+
+          <div class="doc-chapter">
+            <h2><span class="chapter-num">7</span>広告・外部サービス・通信について</h2>
+            <p>
+              現在のバージョン（1.1.0）は広告を表示していません。
               広告SDK、アクセス解析ツール、クラッシュ収集ツール等の外部サービスも組み込んでおらず、
               インターネット通信を行いません。広告IDも使用しません。
             </p>
@@ -159,7 +183,7 @@
           </div>
 
           <div class="doc-chapter">
-            <h2><span class="chapter-num">7</span>データの削除</h2>
+            <h2><span class="chapter-num">8</span>データの削除</h2>
             <p>
               アプリ内でイベントを削除すると、そのイベントの情報と、アプリ専用領域にコピーした背景写真が削除されます。
               本アプリをアンインストールすると、端末内に保存されたすべてのデータが削除されます。
@@ -168,7 +192,7 @@
           </div>
 
           <div class="doc-chapter">
-            <h2><span class="chapter-num">8</span>情報の安全管理</h2>
+            <h2><span class="chapter-num">9</span>情報の安全管理</h2>
             <p>
               本アプリの機能は端末内で完結し、当事業者がユーザーのデータを預かることはありません。
               端末内に保存されたデータの保護は、Android OS のアプリサンドボックスおよび
@@ -177,7 +201,7 @@
           </div>
 
           <div class="doc-chapter">
-            <h2><span class="chapter-num">9</span>お子様の利用について</h2>
+            <h2><span class="chapter-num">10</span>お子様の利用について</h2>
             <p>
               本アプリは、13歳未満のお子様を主たる対象とするアプリとして設計・配信していません。
               当事業者は、お子様から意図的に個人情報を収集することはありません。
@@ -185,7 +209,7 @@
           </div>
 
           <div class="doc-chapter">
-            <h2><span class="chapter-num">10</span>お問い合わせ</h2>
+            <h2><span class="chapter-num">11</span>お問い合わせ</h2>
             <p>
               本ポリシーおよび本アプリのデータの取り扱いに関するお問い合わせは、
               以下のメールアドレスまでご連絡ください。
@@ -200,7 +224,7 @@
           </div>
 
           <div class="doc-chapter">
-            <h2><span class="chapter-num">11</span>ポリシーの改定</h2>
+            <h2><span class="chapter-num">12</span>ポリシーの改定</h2>
             <p>
               本ポリシーは、法令の変更・アプリの仕様変更等に伴い、予告なく変更することがあります。
               重要な変更がある場合は、本ページ上で告知します。
