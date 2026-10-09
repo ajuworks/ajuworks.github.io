@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>あと通知 - 通知をあとで・再通知｜プライバシーポリシー | Aju Works</title>
-  <meta name="description" content="Androidアプリ「あと通知 - 通知をあとで・再通知」（com.ajuworks.notificationlater）のプライバシーポリシー。通知へのアクセスで取得した通知の内容は端末内にのみ保存し、当事業者のサーバーや広告SDKへ送信しません。広告配信にGoogle AdMobを利用しています。">
+  <meta name="description" content="Androidアプリ「あと通知 - 通知をあとで・再通知」（com.ajuworks.notificationlater）のプライバシーポリシー。通知へのアクセスで取得した通知の内容は端末内にのみ保存し、当事業者や第三者のサーバー・AIサービスへ送信しません。現在のバージョンは広告・解析ツールを含まず、インターネットに接続しません。">
   <link rel="canonical" href="https://ajuworks.github.io/privacy/ato-notification/">
 
   <!-- OGP -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="あと通知 - 通知をあとで・再通知｜プライバシーポリシー | Aju Works">
-  <meta property="og:description" content="Androidアプリ「あと通知 - 通知をあとで・再通知」（com.ajuworks.notificationlater）のプライバシーポリシー。通知へのアクセスで取得した通知の内容は端末内にのみ保存し、当事業者のサーバーや広告SDKへ送信しません。広告配信にGoogle AdMobを利用しています。">
+  <meta property="og:description" content="Androidアプリ「あと通知 - 通知をあとで・再通知」（com.ajuworks.notificationlater）のプライバシーポリシー。通知へのアクセスで取得した通知の内容は端末内にのみ保存し、当事業者や第三者のサーバー・AIサービスへ送信しません。現在のバージョンは広告・解析ツールを含まず、インターネットに接続しません。">
   <meta property="og:url"         content="https://ajuworks.github.io/privacy/ato-notification/">
   <meta property="og:locale"      content="ja_JP">
 
@@ -107,7 +107,7 @@
           <div class="doc-chapter">
             <h2><span class="chapter-num">4</span>通知の内容は端末内だけに保存します</h2>
             <p>
-              通知の内容（タイトル・本文など）は、端末内の本アプリ専用の領域（Android のアプリサンドボックス）にのみ保存します。当事業者のサーバーやクラウドへ送信することはなく、クラウド同期・外部 API・AI サービス・解析ツール（アナリティクス）・クラッシュレポートサービスへ送ることもありません。端末のログ（Logcat）にも通知の内容を出力しません。
+              通知の内容（タイトル・本文など）は、端末内の本アプリ専用の領域（Android のアプリサンドボックス）にのみ保存します。当事業者のサーバーやクラウドへ送信することはなく、クラウド同期・外部 API・AI サービス（外部の AI API）・解析ツール（アナリティクス）・クラッシュレポートサービス・広告へ送ることもありません。端末のログ（Logcat）にも通知の内容を出力しません。
             </p>
             <p>
               通知のデータは Android の自動バックアップ（Google ドライブへのバックアップ）および機種変更時のデータ転送の対象から除外しています。このため、機種変更や再インストールをすると、保存した通知は引き継がれません。
@@ -149,35 +149,15 @@
           </div>
 
           <div class="doc-chapter">
-            <h2><span class="chapter-num">9</span>広告配信について（Google AdMob）</h2>
+            <h2><span class="chapter-num">9</span>広告・解析・外部通信について</h2>
             <p>
-              本アプリは、広告配信のために Google AdMob（Google Mobile Ads SDK）を利用しています。広告配信は当事業者ではなく Google LLC およびそのパートナーによって行われ、広告SDKは当事業者のサーバーを経由せずに情報を送受信します。通知の内容（タイトル・本文）、通知を出したアプリの名前、検索語など、本アプリで扱う通知の情報を広告SDKへ渡すことはなく、広告のターゲティングにも利用しません。
+              現在のバージョン（1.0.0）は、広告を表示せず、広告SDK（Google AdMob 等）・同意管理SDK（UMP）・解析ツール（アナリティクス）・クラッシュレポートサービス・Firebase を一切組み込んでいません。広告ID（Advertising ID）も使用しません。
             </p>
             <p>
-              広告SDKの動作にともない、Google およびそのパートナーが次のような情報を取得・処理する場合があります。
-            </p>
-            <ul>
-              <li>広告ID（Advertising ID）・App Set ID 等のデバイス識別子</li>
-              <li>IPアドレス等から推定される、おおよその位置情報（国・地域レベル）</li>
-              <li>広告の表示回数・タップ等、アプリ内での広告に関する操作</li>
-              <li>端末の機種・OSバージョン・言語設定・クラッシュ等の診断情報</li>
-            </ul>
-            <p>
-              これらの情報は、広告の配信・表示回数の計測・広告効果の分析・不正クリック等の不正行為の防止・サービスの品質改善などの目的で処理されます。当事業者は、これらの情報を個人を特定する形で受け取ることはありません。
+              また、本アプリはインターネットへの接続権限（INTERNET）を持たず、通知の内容を含むいかなる情報も、当事業者のサーバー・第三者のサーバー・クラウド・AI サービス（外部の AI API）へ送信しません。すべての機能は端末内で完結します。
             </p>
             <p>
-              Google によるデータの取り扱いについては、以下をご確認ください。
-            </p>
-            <ul>
-              <li><a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Google プライバシー ポリシー</a></li>
-              <li><a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a></li>
-              <li><a href="https://support.google.com/admob/answer/6128543?hl=ja" target="_blank" rel="noopener">AdMob とユーザーのプライバシー</a></li>
-            </ul>
-            <p>
-              EU・英国など、法令上同意の取得が必要な地域では、Google の User Messaging Platform（UMP）による同意確認画面が表示されることがあります。同意の内容は、アプリの「設定」→「広告のプライバシー設定」から変更できます（該当地域のみ表示）。
-            </p>
-            <p>
-              広告のパーソナライズは、Android端末の「設定 &gt; プライバシー &gt; 広告」から広告IDを削除・リセットすることでユーザーご自身で制限できます。広告はホーム画面下部のバナーのみで、通知の詳細画面・「あとで」の時刻選択・初回説明・通知へのアクセスの説明・アプリロック・設定画面には表示しません。
+              将来のバージョンで広告等を導入する場合は、導入前に本ポリシーを改定し、取り扱う情報・利用目的・送信先を本ページで告知します。その場合も、通知の内容（タイトル・本文）を広告や解析に利用することはありません。
             </p>
           </div>
 
@@ -214,7 +194,7 @@
             <p>
               本ポリシーは、法令の変更・アプリの仕様変更等に伴い、予告なく変更することがあります。重要な変更がある場合は、本ページ上で告知します。改定後のポリシーは、本ページに掲載された時点から適用されます。
             </p>
-            <p><strong>最終更新日:</strong> 2026年10月9日</p>
+            <p><strong>最終更新日:</strong> 2026年10月9日（1.0.0 公開版に合わせて広告に関する記載を更新）</p>
           </div>
 
         </div>
