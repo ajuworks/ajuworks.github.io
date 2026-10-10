@@ -269,15 +269,14 @@ APPS = [
     platform="Android",
     tagline="家族への連絡と、いざというときの備えを、ひとつに。",
     category="安全・防災",
-    status="prep",
-    play=None,
+    status="live",
+    play="https://play.google.com/store/apps/details?id=com.ajuworks.kokoshare",
     privacy_anchor="kokoshare",
     icon="kokoshare.png",
     card="安否・現在地の連絡、登録地域の気象警報、防災メモと備蓄を端末内にまとめる防災アプリ。",
     overview=[
       "「元気だよ」「いまここ」などを、LINE やメールなど自分で選んだアプリから家族へすぐ送れます。災害時は「無事・要支援・返信困難」をまとめて伝えられます。",
       "登録した地域（最大3地域）や現在地の気象警報を、気象庁の公開データで確認できます。任意で警報の通知も受け取れます。家族の連絡先、防災メモ、備蓄は端末内に保存し、ログインやクラウド同期は行いません。",
-      "現在は公開準備中です。",
     ],
     features=[
       "家族への連絡（元気だよ・着いたよ・帰宅中・待ち合わせ・いまここ）",
