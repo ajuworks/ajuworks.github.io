@@ -154,7 +154,7 @@
           <div class="doc-chapter">
             <h2><span class="chapter-num">9</span>広告・アクセス解析・外部サービス</h2>
             <p>
-              本アプリは、広告、広告ID、アクセス解析ツール、クラッシュレポートの送信、トラッキングを使用していません。インターネットへの通信は行わず、外部ライブラリは Android 標準の AndroidX・Jetpack Compose と Google Play Billing Library のみです。
+              本アプリは、広告、広告ID、アクセス解析ツール、クラッシュレポートの送信、トラッキングを使用していません。外部ライブラリは Android 標準の AndroidX・Jetpack Compose と Google Play Billing Library のみです。本アプリ自身が当事業者や第三者のサーバーと通信することはありません（購入の確認は Google Play アプリを通じて行われます）。
             </p>
           </div>
 
@@ -164,7 +164,7 @@
               <li>サイレントモードの変更権限（<code>ACCESS_NOTIFICATION_POLICY</code>）— ユーザーが許可した場合のみ、サイレント・バイブを切り替えるため</li>
               <li>起動完了の受信（<code>RECEIVE_BOOT_COMPLETED</code>）— 再起動後に一時適用・スケジュールを再設定するため</li>
               <li>付近のデバイス（<code>BLUETOOTH_CONNECT</code>。Android 11 以前は <code>BLUETOOTH</code>）— Pro の Bluetooth 自動切替を使う場合のみ</li>
-              <li>Google Play の課金（<code>com.android.vending.BILLING</code>）— Pro の購入・復元のため</li>
+              <li>Google Play の課金（<code>com.android.vending.BILLING</code>）、インターネット・ネットワーク状態（<code>INTERNET</code>・<code>ACCESS_NETWORK_STATE</code>）— Pro の購入・復元のため（Google Play Billing Library が使用）</li>
             </ul>
             <p>
               位置情報・連絡先・カメラ・マイク・写真・ユーザー補助（アクセシビリティ）は使用しません。
