@@ -570,9 +570,9 @@ APPS = [
     app_id="com.ajuworks.photocleaner",
     platform="Android",
     tagline="重複・似た写真を整理して、写真の個人情報も安全に。",
-    category="ツール",
-    status="prep",
-    play=None,
+    category="写真",
+    status="live",
+    play="https://play.google.com/store/apps/details?id=com.ajuworks.photocleaner",
     privacy_anchor="photo-sukkiri",
     privacy_note='<a href="privacy/photo-sukkiri/">専用ポリシー</a>（共通ポリシーも併せて適用）',
     icon="photo-sukkiri.png",
@@ -580,7 +580,6 @@ APPS = [
     overview=[
       "端末内の写真から、完全に同じ写真（重複）・連写などの似た写真・スクリーンショット・容量の大きな写真を見つけて、どれくらい空き容量を増やせるかを表示するアプリです。",
       "写真の解析はすべて端末内で行い、写真をAju Worksのサーバーへ送信することはありません。アカウント登録も不要です。",
-      "現在は公開準備中です。",
     ],
     features=[
       "完全に同じ写真（重複写真）の検出",
@@ -600,7 +599,7 @@ APPS = [
       ("主要な権限", "写真へのアクセス / 写真の位置情報へのアクセス（任意） / 通知（任意） / インターネット / ネットワーク状態 / 広告ID"),
     ],
     privacy=("../privacy/photo-sukkiri/", "プライバシーポリシーを見る", False),
-    badges=[("badge-android", "Android"), ("badge-coming-soon", "公開準備中")],
+    badges=[("badge-android", "Android"), ("badge-free", "基本無料")],
     note="写真の表情や構図の良し悪しは判断しません。「おすすめ」は解像度・ピント・明るさなどの数値による目安です。",
   ),
   dict(
