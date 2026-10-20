@@ -16,6 +16,7 @@
     initHamburger();
     initFAQ();
     initActiveNav();
+    initAppFilter();
   });
 
   /* -----------------------------------------------------------------------
@@ -121,6 +122,43 @@
       } else {
         link.classList.remove('active');
       }
+    });
+  }
+
+
+  /* -----------------------------------------------------------------------
+     4. アプリ一覧の検索・カテゴリ絞り込み（apps.html）。JS無効でも全件表示される
+  ----------------------------------------------------------------------- */
+  function initAppFilter() {
+    var list = document.getElementById('app-list');
+    if (!list) return;
+    var input = document.getElementById('app-search');
+    var chips = document.querySelectorAll('.chip');
+    var count = document.getElementById('app-count');
+    var empty = document.getElementById('app-empty');
+    var cards = list.querySelectorAll('.app-tile');
+    var category = '';
+
+    function apply() {
+      var q = (input && input.value || '').trim().toLowerCase();
+      var shown = 0;
+      cards.forEach(function (card) {
+        var ok = (!category || card.getAttribute('data-category') === category) &&
+                 (!q || card.getAttribute('data-search').indexOf(q) !== -1);
+        card.hidden = !ok;
+        if (ok) shown++;
+      });
+      if (count) count.textContent = shown + '本を表示中';
+      if (empty) empty.hidden = shown !== 0;
+    }
+
+    if (input) input.addEventListener('input', apply);
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        category = chip.getAttribute('data-filter') || '';
+        chips.forEach(function (c) { c.classList.toggle('is-active', c === chip); });
+        apply();
+      });
     });
   }
 

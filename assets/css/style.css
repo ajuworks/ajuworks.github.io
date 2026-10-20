@@ -1975,3 +1975,29 @@ main {
 [id] {
   scroll-margin-top: calc(var(--header-height) + 16px);
 }
+
+/* --------------------------------------------------------------------------
+   アプリ一覧: 検索・カテゴリ絞り込み・4列グリッド（apps.html / index.html）
+   -------------------------------------------------------------------------- */
+.app-controls { display: flex; flex-direction: column; gap: var(--space-4); margin-bottom: var(--space-4); }
+.app-search {
+  width: 100%; max-width: 420px; padding: 10px 14px; font-size: 16px;
+  border: 1px solid var(--color-border); border-radius: var(--border-radius-lg); background: var(--color-white);
+}
+.app-chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.chip {
+  padding: 6px 14px; font-size: 14px; cursor: pointer; border-radius: 999px;
+  border: 1px solid var(--color-border); background: var(--color-white); color: var(--color-text);
+}
+.chip.is-active { background: var(--color-primary, #1e3a5f); border-color: var(--color-primary, #1e3a5f); color: #fff; }
+.app-count { color: var(--color-text-muted, #64748b); font-size: 14px; margin: 0 0 var(--space-4); }
+.app-empty, .app-note { color: var(--color-text-muted, #64748b); font-size: 14px; margin-top: var(--space-6); }
+.app-tile[hidden] { display: none; }
+.doc-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.doc-table th, .doc-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+.doc-table code { font-size: 12px; word-break: break-all; }
+.table-wrap { overflow-x: auto; }
+.doc-note { font-size: 13px; color: var(--color-text-muted, #64748b); }
+@media (min-width: 900px) { .app-grid-4 { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1180px) { .app-grid-4 { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 599px) { .app-grid-4 { grid-template-columns: 1fr; } .app-tile-actions { flex-wrap: wrap; } }

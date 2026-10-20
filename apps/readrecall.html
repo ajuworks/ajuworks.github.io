@@ -3,25 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ヨミオク｜読書を記憶に残す — Aju Works</title>
-  <meta name="description" content="開発時の名称 ReadRecall のページは、ヨミオクのページへ移動しました。">
-  <!-- 開発時の名称でのURLを残しておくための転送ページ。検索には新しいURLだけを載せる。 -->
-  <link rel="canonical" href="https://ajuworks.github.io/apps/yomioku.html">
-  <meta name="robots" content="noindex, follow">
-  <meta http-equiv="refresh" content="0; url=yomioku.html">
+  <title>アプリ一覧 — Aju Works</title>
+  <meta name="description" content="アプリの紹介はアプリ一覧に集約しました。">
+  <link rel="canonical" href="https://ajuworks.github.io/apps.html">
+
+  <!-- OGP -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="アプリ一覧 — Aju Works">
+  <meta property="og:description" content="アプリの紹介はアプリ一覧に集約しました。">
+  <meta property="og:url"         content="https://ajuworks.github.io/apps.html">
+  <meta property="og:site_name"   content="Aju Works">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"       content="summary">
+  <meta name="twitter:title"      content="アプリ一覧 — Aju Works">
+  <meta name="twitter:description" content="アプリの紹介はアプリ一覧に集約しました。">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url=../apps.html#yomioku">
+
+  <!-- ファビコン（インラインSVG: 紺背景に白の「A」） -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231e3a5f'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-size='20' font-weight='900' fill='white'>A</text></svg>">
+
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <main class="container" style="padding: 4rem 1rem; text-align: center;">
-    <h1 style="font-size: 1.25rem;">ページを移動しました</h1>
-    <p>
-      このページは <a href="yomioku.html">ヨミオク｜読書を記憶に残す</a> へ移動しました。
-      自動で切り替わらない場合は、リンクをお選びください。
-    </p>
-    <p style="margin-top: 1.5rem;">
-      <a href="yomioku.html" class="btn btn-primary">ヨミオクのページへ</a>
-    </p>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">
+        <span class="logo-mark">A</span>
+        Aju Works
+      </a>
+
+      <!-- PCナビ -->
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="../index.html">ホーム</a>
+        <a href="../apps.html">アプリ</a>
+        <a href="../support.html">サポート</a>
+        <a href="../about.html">事業者情報</a>
+      </nav>
+
+      <!-- ハンバーガーボタン（スマホ用） -->
+      <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- モバイルメニュー -->
+  <nav class="mobile-menu" aria-label="モバイルナビゲーション">
+    <a href="../index.html">ホーム</a>
+    <a href="../apps.html">アプリ</a>
+    <a href="../support.html">サポート</a>
+    <a href="../about.html">事業者情報</a>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container" style="text-align:center;">
+        <h1 style="margin-bottom: var(--space-4);">アプリ一覧へ移動しました</h1>
+        <p>アプリの紹介はアプリ一覧に集約しました（ヨミオク｜読書を記憶に残す）。</p>
+        <p style="margin-top: var(--space-5);"><a class="btn btn-primary" href="../apps.html#yomioku">アプリ一覧を開く</a></p>
+      </div>
+    </section>
   </main>
-  <script>location.replace("yomioku.html");</script>
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <!-- ブランド -->
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">Aju Works</a>
+          <p>日々の実務と暮らしを少し便利にする<br>Androidアプリ</p>
+        </div>
+
+        <!-- ナビ: サービス -->
+        <div class="footer-nav-group">
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="../apps.html">アプリ一覧</a></li>
+            <li><a href="../support.html">サポート</a></li>
+            <li><a href="../about.html">事業者情報</a></li>
+          </ul>
+        </div>
+
+        <!-- ナビ: ポリシー -->
+        <div class="footer-nav-group">
+          <h4>ポリシー</h4>
+          <ul>
+            <li><a href="../privacy.html">プライバシーポリシー（共通）</a></li>
+            <li><a href="../privacy/">アプリ別プライバシーポリシー</a></li>
+            <li><a href="../terms.html">利用規約</a></li>
+          </ul>
+        </div>
+
+        <!-- ナビ: お問い合わせ -->
+        <div class="footer-nav-group">
+          <h4>お問い合わせ</h4>
+          <ul>
+            <li><a href="../support.html">サポート・お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aju Works. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

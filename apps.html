@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>アプリ一覧 — Aju Works</title>
-  <meta name="description" content="Aju Worksが開発したAndroidアプリの一覧。FANVOLT、筋トレ記録＆ベンチコーチ、サブスク整理、Focus Gate、歩数・血圧手帳、ヨミオク、WatchIt、Night Fadeなど。">
+  <meta name="description" content="Google Playで公開中のAju WorksのAndroidアプリ全20本の一覧。カテゴリ・キーワードで探せます。">
   <link rel="canonical" href="https://ajuworks.github.io/apps.html">
 
   <!-- OGP -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="アプリ一覧 — Aju Works">
-  <meta property="og:description" content="Aju Worksが開発したAndroidアプリの一覧。FANVOLT、筋トレ記録＆ベンチコーチ、サブスク整理、Focus Gate、歩数・血圧手帳、ヨミオク、WatchIt、Night Fadeなど。">
+  <meta property="og:description" content="Google Playで公開中のAju WorksのAndroidアプリ全20本の一覧。カテゴリ・キーワードで探せます。">
   <meta property="og:url"         content="https://ajuworks.github.io/apps.html">
   <meta property="og:site_name"   content="Aju Works">
   <meta property="og:locale"      content="ja_JP">
   <meta name="twitter:card"       content="summary">
   <meta name="twitter:title"      content="アプリ一覧 — Aju Works">
-  <meta name="twitter:description" content="Aju Worksが開発したAndroidアプリの一覧。FANVOLT、筋トレ記録＆ベンチコーチ、サブスク整理、Focus Gate、歩数・血圧手帳、ヨミオク、WatchIt、Night Fadeなど。">
+  <meta name="twitter:description" content="Google Playで公開中のAju WorksのAndroidアプリ全20本の一覧。カテゴリ・キーワードで探せます。">
 
   <!-- ファビコン（インラインSVG: 紺背景に白の「A」） -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231e3a5f'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-size='20' font-weight='900' fill='white'>A</text></svg>">
@@ -63,352 +63,315 @@
     <!-- ===== ページヘッダー ===== -->
     <section class="page-header">
       <div class="container">
-        <h1>アプリ</h1>
-        <p>Aju Worksが企画・開発しているAndroidアプリの一覧です。各アプリの詳細ページで、機能とデータの取り扱いを確認できます。</p>
+        <h1>アプリ一覧</h1>
+        <p>Google Playで公開中のAju Worksの全Androidアプリ（20本）です。</p>
       </div>
     </section>
 
-    <!-- ===== 公開中 ===== -->
     <section class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Available now</span>
-          <h2>公開中のアプリ</h2>
-          <p>Google Playで公開しています。</p>
+        <div class="app-controls">
+          <input type="search" id="app-search" class="app-search" placeholder="アプリ名・キーワードで探す" aria-label="アプリを検索" autocomplete="off">
+          <div class="app-chips" role="group" aria-label="カテゴリで絞り込む">
+            <button type="button" class="chip is-active" data-filter="">すべて（20）</button>
+            <button type="button" class="chip" data-filter="ツール">ツール（11）</button>
+            <button type="button" class="chip" data-filter="仕事効率化">仕事効率化（2）</button>
+            <button type="button" class="chip" data-filter="ライフスタイル">ライフスタイル（4）</button>
+            <button type="button" class="chip" data-filter="健康">健康（2）</button>
+            <button type="button" class="chip" data-filter="その他">その他（1）</button>
+          </div>
         </div>
+        <p class="app-count" id="app-count" aria-live="polite">20本を表示中</p>
 
-        <div class="app-grid app-grid-3">
-      <article class="app-tile">
+        <div class="app-grid app-grid-4" id="app-list">
+      <article class="app-tile" id="charge-mihari" data-category="ツール" data-search="充電みはり - 80%・満充電アラーム 充電みはり ツール バッテリーが80%・90%・100%などの設定残量になったら、音・振動・通知でお知らせ。充電のしすぎ防止に。">
         <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/gym-record.png" width="192" height="192" alt="筋トレ記録＆ベンチコーチ のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">筋トレ記録＆ベンチコーチ</h3>
-            <span class="app-tile-category">健康・フィットネス</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">重量・回数・セット数の記録と次回メニュー提案で、筋トレの継続を支えるアプリ。Wear OS対応。</p>
-        <div class="app-tile-actions">
-          <a href="apps/gym-record.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.atushi.benchcoach" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/fanvolt.svg" width="192" height="192" alt="FANVOLT｜推し活記録・支出管理 のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">FANVOLT｜推し活記録・支出管理</h3>
-            <span class="app-tile-category">ライフスタイル</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">推し活の記録・予定・支出・メモを一元管理。画像を貼るだけで日付や金額を読み取ります。</p>
-        <div class="app-tile-actions">
-          <a href="apps/fanvolt.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.fanvolt" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/subscription-manager.png" width="192" height="192" alt="サブスク整理｜解約ナビ のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">サブスク整理｜解約ナビ</h3>
-            <span class="app-tile-category">家計・ツール</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">サブスクの金額と更新日を管理し、契約経路に応じた公式の解約手続きへ案内します。</p>
-        <div class="app-tile-actions">
-          <a href="apps/subscription-manager.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.atush.cancelnav" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/focus-gate.png" width="192" height="192" alt="Focus Gate｜スマホ使いすぎ防止 のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">Focus Gate｜スマホ使いすぎ防止</h3>
-            <span class="app-tile-category">生産性・自己管理</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">選んだアプリを開くとき、理由の入力と待機を求めて無意識な利用に気づきを促します。</p>
-        <div class="app-tile-actions">
-          <a href="apps/focus-gate.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.focusgate" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/step-bp-diary.png" width="192" height="192" alt="歩数・血圧手帳 のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">歩数・血圧手帳</h3>
-            <span class="app-tile-category">健康・フィットネス</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">歩数・血圧・体重・食事を一元管理する非医療用の健康記録手帳。広告・外部送信なし。</p>
-        <div class="app-tile-actions">
-          <a href="apps/step-bp-diary.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.stepbpdiary" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/yomioku.svg" width="192" height="192" alt="ヨミオク｜読書を記憶に残す のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">ヨミオク｜読書を記憶に残す</h3>
-            <span class="app-tile-category">教育・読書</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">本から得たことを軽く残し、後日思い出し、別の本とつなぐ。要点づくりは端末内AIで行います。</p>
-        <div class="app-tile-actions">
-          <a href="apps/yomioku.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.readrecall" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/kokoshare.png" width="192" height="192" alt="ここシェア のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">ここシェア</h3>
-            <span class="app-tile-category">安全・防災</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">安否・現在地の連絡、登録地域の気象警報、防災メモと備蓄を端末内にまとめる防災アプリ。</p>
-        <div class="app-tile-actions">
-          <a href="apps/kokoshare.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.kokoshare" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/night-fade.svg" width="192" height="192" alt="Night Fade のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">Night Fade</h3>
-            <span class="app-tile-category">生産性・自己管理</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">夜の時間経過に合わせて画面を暗く暖色寄りに変え、朝は徐々に戻す完全オフラインのアプリ。</p>
-        <div class="app-tile-actions">
-          <a href="apps/night-fade.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.nightfade" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/linkpocket.svg" width="192" height="192" alt="リンクポケット のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">リンクポケット</h3>
-            <span class="app-tile-category">ツール</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">Chromeや他のアプリの共有メニューから、気になるリンクをワンタップで保存。タグと検索で整理し、あとでゆっくり見られます。</p>
-        <div class="app-tile-actions">
-          <a href="apps/linkpocket.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.linkpocket" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/worklog.png" width="192" height="192" alt="WorkLog - 勤務時間・タイムカード記録 のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">WorkLog - 勤務時間・タイムカード記録</h3>
-            <span class="app-tile-category">仕事効率化</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">出勤・休憩・退勤を押すだけで勤務時間を記録。日・週・月ごとの集計とCSV書き出しに対応。</p>
-        <div class="app-tile-actions">
-          <a href="apps/worklog.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.worklog" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/pittari-compress.png" width="192" height="192" alt="ぴったり圧縮 - 画像・PDFをKB/MB以下に のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">ぴったり圧縮 - 画像・PDFをKB/MB以下に</h3>
-            <span class="app-tile-category">ツール</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">写真やPDFを100KB〜10MBや自由指定の容量以下に圧縮。処理は端末内で完結します。</p>
-        <div class="app-tile-actions">
-          <a href="apps/pittari-compress.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.pittari" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/photo-sukkiri.png" width="192" height="192" alt="フォトすっきり - 重複・似た写真を整理 のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">フォトすっきり - 重複・似た写真を整理</h3>
-            <span class="app-tile-category">写真</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">重複写真・似た写真・スクショ・大きな写真を見つけて整理。位置情報を消して安全に共有。解析は端末内で完結します。</p>
-        <div class="app-tile-actions">
-          <a href="apps/photo-sukkiri.html" class="btn btn-primary btn-sm">詳細を見る</a>
-          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.photocleaner" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Google Play</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-live">公開中</span>
-        </div>
-      </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== 公開準備中 ===== -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Coming soon</span>
-          <h2>公開準備中のアプリ</h2>
-          <p>開発・確認作業を進めています。公開時期が決まりましたらこのページで案内します。</p>
-        </div>
-
-        <div class="app-grid app-grid-3">
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/watchit.svg" width="192" height="192" alt="WatchIt のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">WatchIt</h3>
-            <span class="app-tile-category">ツール</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">登録したWebページを端末自身が定期確認し、意味のある変化だけをローカル通知します。</p>
-        <div class="app-tile-actions">
-          <a href="apps/watchit.html" class="btn btn-primary btn-sm">詳細を見る</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-prep">公開準備中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/midnight-hotel.svg" width="192" height="192" alt="深夜ホテル のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">深夜ホテル</h3>
-            <span class="app-tile-category">ゲーム</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">昼の経営判断が夜の出来事に返ってくる、客室8室のホテル経営ゲーム。完全オフライン。</p>
-        <div class="app-tile-actions">
-          <a href="apps/midnight-hotel.html" class="btn btn-primary btn-sm">詳細を見る</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-prep">公開準備中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/hibi-count.png" width="192" height="192" alt="日々カウント - 記念日カウントダウン のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">日々カウント - 記念日カウントダウン</h3>
-            <span class="app-tile-category">ライフスタイル</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">記念日や予定の日までの日数をカウントダウン。ウィジェットとカレンダー連携に対応。</p>
-        <div class="app-tile-actions">
-          <a href="apps/hibi-count.html" class="btn btn-primary btn-sm">詳細を見る</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-prep">公開準備中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/oto-set.svg" width="192" height="192" alt="おとセット - 音量切替 のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">おとセット - 音量切替</h3>
-            <span class="app-tile-category">ツール</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">自宅・仕事・夜などの音量（メディア・着信・通知・アラーム）を保存して、ワンタップで切替。30分だけの一時適用なら自動で元に戻ります。</p>
-        <div class="app-tile-actions">
-          <a href="apps/oto-set.html" class="btn btn-primary btn-sm">詳細を見る</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-prep">公開準備中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/contacts-sukkiri.svg" width="192" height="192" alt="連絡先すっきり - 重複整理・バックアップ のアプリアイコン" loading="lazy" decoding="async"></span>
-          <div class="app-tile-heading">
-            <h3 class="app-tile-name">連絡先すっきり - 重複整理・バックアップ</h3>
-            <span class="app-tile-category">ツール</span>
-          </div>
-        </div>
-        <p class="app-tile-desc">同じ電話番号・メールの重複連絡先を見つけ、統合前に何が残るかを確認してから整理。変更前に自動バックアップ。連絡先は端末の外へ送りません。</p>
-        <div class="app-tile-actions">
-          <a href="apps/contacts-sukkiri.html" class="btn btn-primary btn-sm">詳細を見る</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-prep">公開準備中</span>
-        </div>
-      </article>
-      <article class="app-tile">
-        <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/charge-mihari.svg" width="192" height="192" alt="充電みはり - 80%・満充電アラーム のアプリアイコン" loading="lazy" decoding="async"></span>
+          <span class="app-tile-icon"><img src="assets/apps/charge-mihari/icon.png" width="128" height="128" alt="充電みはり - 80%・満充電アラーム のアプリアイコン" loading="lazy" decoding="async"></span>
           <div class="app-tile-heading">
             <h3 class="app-tile-name">充電みはり - 80%・満充電アラーム</h3>
             <span class="app-tile-category">ツール</span>
           </div>
         </div>
-        <p class="app-tile-desc">80%・90%・100%など、設定したバッテリー残量になったら音・振動・通知でお知らせ。充電そのものは止めません。広告なし。</p>
+        <p class="app-tile-desc">バッテリーが80%・90%・100%などの設定残量になったら、音・振動・通知でお知らせ。充電のしすぎ防止に。</p>
         <div class="app-tile-actions">
-          <a href="apps/charge-mihari.html" class="btn btn-primary btn-sm">詳細を見る</a>
-        </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-prep">公開準備中</span>
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.chargemihari" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/charge-mihari/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
         </div>
       </article>
-      <article class="app-tile">
+      <article class="app-tile" id="contacts-sukkiri" data-category="ツール" data-search="連絡先すっきり - 重複整理・バックアップ 連絡先すっきり ツール 重複した連絡先を見つけ、統合前に残る内容を確認して整理。変更前に自動でバックアップします。">
         <div class="app-tile-head">
-          <span class="app-tile-icon"><img src="assets/img/apps/copipe-shelf.svg" width="192" height="192" alt="コピペ棚 - 定型文・コピー保存 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <span class="app-tile-icon"><img src="assets/apps/contacts-sukkiri/icon.png" width="128" height="128" alt="連絡先すっきり - 重複整理・バックアップ のアプリアイコン" loading="lazy" decoding="async"></span>
           <div class="app-tile-heading">
-            <h3 class="app-tile-name">コピペ棚 - 定型文・コピー保存</h3>
+            <h3 class="app-tile-name">連絡先すっきり - 重複整理・バックアップ</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">重複した連絡先を見つけ、統合前に残る内容を確認して整理。変更前に自動でバックアップします。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.contactssukkiri" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/contacts-sukkiri/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="oto-set" data-category="ツール" data-search="おとセット - 音量切替 おとセット ツール 自宅・仕事・夜などの音量を保存して、ワンタップで切り替え。30分だけの一時適用にも対応。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/oto-set/icon.png" width="128" height="128" alt="おとセット - 音量切替 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">おとセット - 音量切替</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">自宅・仕事・夜などの音量を保存して、ワンタップで切り替え。30分だけの一時適用にも対応。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.otoset" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/oto-set/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="kurutto" data-category="ツール" data-search="くるっと回転 - アプリ別に縦横固定 くるっと回転 ツール 画面の向きをアプリごとに縦・横へ固定。使うアプリに合わせて自動で切り替わります。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/kurutto/icon.png" width="128" height="128" alt="くるっと回転 - アプリ別に縦横固定 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">くるっと回転 - アプリ別に縦横固定</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">画面の向きをアプリごとに縦・横へ固定。使うアプリに合わせて自動で切り替わります。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.kurutto" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/kurutto/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="zutto-screen" data-category="ツール" data-search="ずっと画面 - 画面オフ・スリープ防止 ずっと画面 ツール 必要なときだけ画面の自動消灯を防ぐ、スリープ防止アプリ。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/zutto-screen/icon.png" width="128" height="128" alt="ずっと画面 - 画面オフ・スリープ防止 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">ずっと画面 - 画面オフ・スリープ防止</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">必要なときだけ画面の自動消灯を防ぐ、スリープ防止アプリ。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.zuttoscreen" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/zutto-screen/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="atokeshi" data-category="ツール" data-search="あと消し - スクショ・ファイル自動整理 あと消し ツール スクショなど今だけ必要なファイルに期限を付け、期限後はゴミ箱を経由して自動で整理します。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/atokeshi/icon.png" width="128" height="128" alt="あと消し - スクショ・ファイル自動整理 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">あと消し - スクショ・ファイル自動整理</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">スクショなど今だけ必要なファイルに期限を付け、期限後はゴミ箱を経由して自動で整理します。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.atokeshi" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/atokeshi/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="ato-notification" data-category="ツール" data-search="あと通知 - 通知をあとで・再通知 あと通知 ツール 受信した通知を「あとで」にして、時間を置いて再通知。見逃しや未対応を減らします。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/ato-notification/icon.png" width="128" height="128" alt="あと通知 - 通知をあとで・再通知 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">あと通知 - 通知をあとで・再通知</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">受信した通知を「あとで」にして、時間を置いて再通知。見逃しや未対応を減らします。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.notificationlater" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/ato-notification/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="photo-sukkiri" data-category="ツール" data-search="フォトすっきり - 重複・似た写真を整理 フォトすっきり ツール 重複写真・似た写真・スクショを見つけて整理。位置情報を消した共有もできます。解析は端末内で完結。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/photo-sukkiri/icon.png" width="128" height="128" alt="フォトすっきり - 重複・似た写真を整理 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">フォトすっきり - 重複・似た写真を整理</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">重複写真・似た写真・スクショを見つけて整理。位置情報を消した共有もできます。解析は端末内で完結。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.photocleaner" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/photo-sukkiri/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="link-pocket" data-category="ツール" data-search="リンクポケット - あとで見るリンクを保存 リンクポケット ツール ブラウザや他のアプリの共有メニューから、気になるリンクをワンタップで保存。タグと検索で整理できます。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/link-pocket/icon.png" width="128" height="128" alt="リンクポケット - あとで見るリンクを保存 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">リンクポケット - あとで見るリンクを保存</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">ブラウザや他のアプリの共有メニューから、気になるリンクをワンタップで保存。タグと検索で整理できます。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.linkpocket" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/link-pocket/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="hibi-count" data-category="ライフスタイル" data-search="日々カウント - 記念日カウントダウン 日々カウント ライフスタイル 記念日や予定の日までの日数をカウントダウン。ウィジェットとカレンダー連携に対応しています。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/hibi-count/icon.png" width="128" height="128" alt="日々カウント - 記念日カウントダウン のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">日々カウント - 記念日カウントダウン</h3>
+            <span class="app-tile-category">ライフスタイル</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">記念日や予定の日までの日数をカウントダウン。ウィジェットとカレンダー連携に対応しています。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.countdown" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/hibi-count/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="worklog" data-category="仕事効率化" data-search="worklog - 勤務時間・タイムカード記録 worklog 仕事効率化 出勤・休憩・退勤を押すだけで勤務時間を記録。日・週・月の集計とcsv書き出しに対応します。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/worklog/icon.png" width="128" height="128" alt="WorkLog - 勤務時間・タイムカード記録 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">WorkLog - 勤務時間・タイムカード記録</h3>
             <span class="app-tile-category">仕事効率化</span>
           </div>
         </div>
-        <p class="app-tile-desc">よく使う文章・URL・AIプロンプトを棚に保存して、必要なとき1タップでコピー。クリップボードの監視なし・広告なし。</p>
+        <p class="app-tile-desc">出勤・休憩・退勤を押すだけで勤務時間を記録。日・週・月の集計とCSV書き出しに対応します。</p>
         <div class="app-tile-actions">
-          <a href="apps/copipe-shelf.html" class="btn btn-primary btn-sm">詳細を見る</a>
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.worklog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/worklog/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
         </div>
-        <div class="app-tile-foot">
-          <span class="status-badge status-prep">公開準備中</span>
+      </article>
+      <article class="app-tile" id="pittari-compress" data-category="ツール" data-search="ぴったり圧縮 - 画像・pdfをkb/mb以下に ぴったり圧縮 ツール 写真やpdfを指定した容量以下に圧縮。提出先の上限サイズに合わせて調整でき、処理は端末内で完結します。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/pittari-compress/icon.png" width="128" height="128" alt="ぴったり圧縮 - 画像・PDFをKB/MB以下に のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">ぴったり圧縮 - 画像・PDFをKB/MB以下に</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">写真やPDFを指定した容量以下に圧縮。提出先の上限サイズに合わせて調整でき、処理は端末内で完結します。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.pittari" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/pittari-compress/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="yomioku" data-category="その他" data-search="ヨミオク｜読書を記憶に残す ヨミオク その他 本から得たことを軽く残し、後日思い出して復習。読んだ本どうしのつながりも見つけられます。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/yomioku/icon.png" width="128" height="128" alt="ヨミオク｜読書を記憶に残す のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">ヨミオク｜読書を記憶に残す</h3>
+            <span class="app-tile-category">その他</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">本から得たことを軽く残し、後日思い出して復習。読んだ本どうしのつながりも見つけられます。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.readrecall" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/yomioku/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="step-bp-diary" data-category="健康" data-search="血圧手帳｜歩数・健康記録 歩数・血圧手帳 健康 歩数・血圧・体重・食事をまとめて記録する、非医療用の健康記録手帳。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/step-bp-diary/icon.png" width="128" height="128" alt="血圧手帳｜歩数・健康記録 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">血圧手帳｜歩数・健康記録</h3>
+            <span class="app-tile-category">健康</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">歩数・血圧・体重・食事をまとめて記録する、非医療用の健康記録手帳。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.stepbpdiary" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/step-bp-diary/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="kokoshare" data-category="ライフスタイル" data-search="ここシェア｜家族の安否連絡・防災・気象警報 ここシェア ライフスタイル 家族への安否・現在地の連絡、登録地域の気象警報、防災メモと備蓄の管理をひとつにまとめた防災アプリ。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/kokoshare/icon.png" width="128" height="128" alt="ここシェア｜家族の安否連絡・防災・気象警報 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">ここシェア｜家族の安否連絡・防災・気象警報</h3>
+            <span class="app-tile-category">ライフスタイル</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">家族への安否・現在地の連絡、登録地域の気象警報、防災メモと備蓄の管理をひとつにまとめた防災アプリ。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.kokoshare" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/kokoshare/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="focus-gate" data-category="仕事効率化" data-search="スマホ使いすぎ防止｜アプリ制限・集中 focus gate 仕事効率化 選んだアプリを開くとき、理由の入力と少しの待機を挟み、無意識に開いてしまう習慣に気づかせます。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/focus-gate/icon.png" width="128" height="128" alt="スマホ使いすぎ防止｜アプリ制限・集中 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">スマホ使いすぎ防止｜アプリ制限・集中</h3>
+            <span class="app-tile-category">仕事効率化</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">選んだアプリを開くとき、理由の入力と少しの待機を挟み、無意識に開いてしまう習慣に気づかせます。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.focusgate" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/focus-gate/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="night-fade" data-category="ツール" data-search="night fade｜ブルーライトフィルター night fade ツール 夜の時間経過に合わせて画面を暗く暖色寄りに変え、朝は徐々に戻すブルーライトフィルター。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/night-fade/icon.png" width="128" height="128" alt="Night Fade｜ブルーライトフィルター のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">Night Fade｜ブルーライトフィルター</h3>
+            <span class="app-tile-category">ツール</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">夜の時間経過に合わせて画面を暗く暖色寄りに変え、朝は徐々に戻すブルーライトフィルター。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.nightfade" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/night-fade/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="cancel-nav" data-category="ライフスタイル" data-search="サブスク管理｜解約ナビ・固定費整理 サブスク整理 ライフスタイル サブスクの金額と更新日を管理し、契約経路に応じた公式の解約手続きへ案内します。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/cancel-nav/icon.png" width="128" height="128" alt="サブスク管理｜解約ナビ・固定費整理 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">サブスク管理｜解約ナビ・固定費整理</h3>
+            <span class="app-tile-category">ライフスタイル</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">サブスクの金額と更新日を管理し、契約経路に応じた公式の解約手続きへ案内します。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.atush.cancelnav" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/cancel-nav/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="fanvolt" data-category="ライフスタイル" data-search="fanvolt｜推し活記録・支出管理 fanvolt ライフスタイル 推し活の記録・予定・支出・メモを一元管理。画像を貼るだけで日付や金額を読み取れます。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/fanvolt/icon.png" width="128" height="128" alt="FANVOLT｜推し活記録・支出管理 のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">FANVOLT｜推し活記録・支出管理</h3>
+            <span class="app-tile-category">ライフスタイル</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">推し活の記録・予定・支出・メモを一元管理。画像を貼るだけで日付や金額を読み取れます。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ajuworks.fanvolt" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/fanvolt/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
+        </div>
+      </article>
+      <article class="app-tile" id="gym-record" data-category="健康" data-search="筋トレ記録＆ベンチコーチ ベンチコーチ 健康 重量・回数・セットを記録して、次回メニューを提案。wear osにも対応した筋トレ記録アプリです。">
+        <div class="app-tile-head">
+          <span class="app-tile-icon"><img src="assets/apps/gym-record/icon.png" width="128" height="128" alt="筋トレ記録＆ベンチコーチ のアプリアイコン" loading="lazy" decoding="async"></span>
+          <div class="app-tile-heading">
+            <h3 class="app-tile-name">筋トレ記録＆ベンチコーチ</h3>
+            <span class="app-tile-category">健康</span>
+          </div>
+        </div>
+        <p class="app-tile-desc">重量・回数・セットを記録して、次回メニューを提案。Wear OSにも対応した筋トレ記録アプリです。</p>
+        <div class="app-tile-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.atushi.benchcoach" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play</a>
+          <a href="privacy/gym-record/" class="btn btn-outline btn-sm">プライバシーポリシー</a>
         </div>
       </article>
         </div>
+        <p class="app-empty" id="app-empty" hidden>該当するアプリがありません。</p>
+
+        <p class="app-note">
+          公開準備中のアプリは、Google Playで公開されたあとにこの一覧へ追加します。
+          各アプリの情報の取り扱いは <a href="privacy/">アプリ別プライバシーポリシー</a> と
+          <a href="privacy.html">共通プライバシーポリシー</a> をご覧ください。
+        </p>
       </div>
     </section>
 
@@ -430,7 +393,7 @@
         <!-- ブランド -->
         <div class="footer-brand">
           <a href="index.html" class="footer-logo">Aju Works</a>
-          <p>日々の実務と暮らしを少し便利にする<br>デジタル制作スタジオ</p>
+          <p>日々の実務と暮らしを少し便利にする<br>Androidアプリ</p>
         </div>
 
         <!-- ナビ: サービス -->
@@ -447,7 +410,7 @@
         <div class="footer-nav-group">
           <h4>ポリシー</h4>
           <ul>
-            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="privacy.html">プライバシーポリシー（共通）</a></li>
             <li><a href="privacy/">アプリ別プライバシーポリシー</a></li>
             <li><a href="terms.html">利用規約</a></li>
           </ul>
