@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>充電みはり - 80%・満充電アラーム｜プライバシーポリシー | Aju Works</title>
-  <meta name="description" content="Androidアプリ「充電みはり - 80%・満充電アラーム」（com.ajuworks.chargemihari）のプライバシーポリシー。バッテリーの情報は端末内だけで使い、Aju Worksのサーバーや第三者へ送信しません。広告・アクセス解析は使用していません。">
+  <meta name="description" content="Androidアプリ「充電みはり - 80%・満充電アラーム」（com.ajuworks.chargemihari）のプライバシーポリシー。バッテリーの情報は端末内だけで使い、Aju Worksのサーバーや第三者へ送信しません。Free版ではGoogle Mobile Adsによる広告を表示します。充電情報は広告ターゲティングに使用しません。">
   <link rel="canonical" href="https://ajuworks.github.io/privacy/charge-mihari/">
 
   <!-- OGP -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="充電みはり - 80%・満充電アラーム｜プライバシーポリシー | Aju Works">
-  <meta property="og:description" content="Androidアプリ「充電みはり - 80%・満充電アラーム」（com.ajuworks.chargemihari）のプライバシーポリシー。バッテリーの情報は端末内だけで使い、Aju Worksのサーバーや第三者へ送信しません。広告・アクセス解析は使用していません。">
+  <meta property="og:description" content="Androidアプリ「充電みはり - 80%・満充電アラーム」（com.ajuworks.chargemihari）のプライバシーポリシー。バッテリーの情報は端末内だけで使い、Aju Worksのサーバーや第三者へ送信しません。Free版ではGoogle Mobile Adsによる広告を表示します。充電情報は広告ターゲティングに使用しません。">
   <meta property="og:url"         content="https://ajuworks.github.io/privacy/charge-mihari/">
   <meta property="og:locale"      content="ja_JP">
 
@@ -64,7 +64,7 @@
       <div class="container">
         <div class="document-content">
           <div class="document-meta">
-            <span><strong>最終更新:</strong> 2026年10月14日</span>
+            <span><strong>最終更新:</strong> 2026年10月21日</span>
             <span><strong>事業者:</strong> Aju Works（個人事業）</span>
           </div>
 
@@ -133,7 +133,7 @@
           <div class="doc-chapter">
             <h2><span class="chapter-num">6</span>広告・アクセス解析・外部サービス</h2>
             <p>
-              本アプリは、広告、広告ID、アクセス解析ツール、クラッシュレポートの送信、Firebase、トラッキングを使用していません。外部ライブラリは Android 標準の AndroidX・Jetpack Compose と Google Play Billing Library のみです。本アプリ自身が当事業者や第三者のサーバーと通信することはありません（購入の確認は Google Play アプリを通じて行われます）。
+              Free版では Google Mobile Ads SDK を使用して広告を表示します。広告配信のため、Google Mobile Ads SDK は IP アドレス（おおよその地域の推定に使われる場合があります）、アプリ内での操作・広告表示とのやり取り、診断情報、端末または広告に関する識別子などを自動的に取得・送信する場合があります。これらの処理、広告IDの利用可否や同意の管理は Google の仕様とユーザーの地域・選択に従います。Google User Messaging Platform（UMP）を使って同意情報を更新し、必要な同意フォームやプライバシー設定を提供します。同意を得られない、または広告リクエストが許可されない場合は広告を読み込みません。Pro購入済みまたは審査用アクセス有効時は広告SDKへの広告リクエストを行いません。バッテリー残量、充電状態、通知設定、監視履歴などを広告リクエストや広告ターゲティングへ渡しません。広告配信に伴う情報はGoogleがGoogle Mobile Ads/UMPの規約とプライバシーポリシーに従い処理します。Androidの前景サービス、通知、端末内の設定・履歴の扱いは本ポリシーの各項に記載のとおりです。広告以外のアクセス解析、Firebase、独自クラッシュレポート送信は行いません。Googleによる情報の取扱いは <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Google プライバシー ポリシー</a> をご確認ください。
             </p>
           </div>
 
@@ -144,10 +144,10 @@
               <li>前景サービス（<code>FOREGROUND_SERVICE</code>・<code>FOREGROUND_SERVICE_SPECIAL_USE</code>）— ユーザーが開始した残量の監視を、画面を閉じても続けるため</li>
               <li>起動完了の受信（<code>RECEIVE_BOOT_COMPLETED</code>）— 監視中に再起動したとき、監視を再開するため</li>
               <li>振動（<code>VIBRATE</code>）— お知らせの振動のため</li>
-              <li>Google Play の課金（<code>com.android.vending.BILLING</code>）、インターネット・ネットワーク状態（<code>INTERNET</code>・<code>ACCESS_NETWORK_STATE</code>）— Pro の購入・復元のため（Google Play Billing Library が使用）</li>
+              <li>Google Play の課金（<code>com.android.vending.BILLING</code>）— Pro の購入・復元のため（Google Play Billing Library が使用）<br>インターネット・ネットワーク状態（<code>INTERNET</code>・<code>ACCESS_NETWORK_STATE</code>）— Google Mobile Ads/UMP による広告配信と同意管理、および Google Play Billing Library の通信のため</li>
             </ul>
             <p>
-              おやすみモードの設定変更・正確なアラーム・電池の最適化の除外・位置情報・連絡先・ストレージ・ユーザー補助（アクセシビリティ）・広告IDは使用しません。
+              おやすみモードの設定変更・正確なアラーム・電池の最適化の除外・位置情報・連絡先・写真・マイク・カメラ・ユーザー補助（アクセシビリティ）は使用しません。Google Mobile Ads SDK が広告IDなどの端末識別子を扱う場合があります。
             </p>
           </div>
 
@@ -184,7 +184,7 @@
             <p>
               本ポリシーは、法令の変更・アプリの仕様変更等に伴い、予告なく変更することがあります。重要な変更がある場合は、本ページ上で告知します。改定後のポリシーは、本ページに掲載された時点から適用されます。
             </p>
-            <p><strong>最終更新日:</strong> 2026年10月14日</p>
+            <p><strong>最終更新日:</strong> 2026年10月21日</p>
           </div>
 
         </div>

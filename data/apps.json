@@ -12,7 +12,7 @@
    "icon": "assets/apps/charge-mihari/icon.png",
    "featured": true,
    "sortOrder": 1,
-   "ads": false,
+   "ads": true,
    "pro": true
   },
   {
