@@ -289,7 +289,7 @@
    "name": "書類スキャン - PDF・画像で保存",
    "launcherName": "書類スキャン",
    "packageName": "com.ajuworks.documentscan",
-   "status": "development",
+   "status": "in_review",
    "category": "ツール",
    "description": "紙の書類を撮って四隅を自動検出し、まっすぐ読みやすく補正。PDF・JPEG で端末内に保存できます。",
    "icon": "assets/apps/document-scan/icon.png",
