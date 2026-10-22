@@ -238,7 +238,7 @@
    "icon": "assets/apps/night-fade/icon.png",
    "featured": false,
    "sortOrder": 17,
-   "ads": false,
+   "ads": true,
    "pro": false
   },
   {
@@ -295,7 +295,7 @@
    "icon": "assets/apps/document-scan/icon.png",
    "featured": false,
    "sortOrder": 100,
-   "ads": false,
+   "ads": true,
    "pro": true,
    "privacyListed": true
   },
@@ -310,7 +310,7 @@
    "icon": "assets/apps/photo-pdf/icon.png",
    "featured": false,
    "sortOrder": 101,
-   "ads": false,
+   "ads": true,
    "pro": true,
    "playAppId": "4973313248821265042"
   },
@@ -325,7 +325,7 @@
    "icon": "assets/apps/wifi-qr-share/icon.png",
    "featured": false,
    "sortOrder": 102,
-   "ads": false,
+   "ads": true,
    "pro": true,
    "playAppId": "4976045906968382377"
   },
@@ -340,7 +340,7 @@
    "icon": "assets/apps/kugiri-timer/icon.png",
    "featured": false,
    "sortOrder": 103,
-   "ads": false,
+   "ads": true,
    "pro": true,
    "playAppId": "4975362461813842018"
   },
@@ -355,7 +355,7 @@
    "icon": "assets/apps/copipe-shelf/icon.png",
    "featured": false,
    "sortOrder": 104,
-   "ads": false,
+   "ads": true,
    "pro": true,
    "playAppId": "4973165483984225019",
    "privacyListed": true
