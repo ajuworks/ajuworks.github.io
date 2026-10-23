@@ -349,7 +349,7 @@
    "name": "コピペ棚 - 定型文・コピー保存",
    "launcherName": "コピペ棚",
    "packageName": "com.ajuworks.copipeshelf",
-   "status": "development",
+   "status": "in_review",
    "category": "ツール",
    "description": "よく使う文章・URL・AIプロンプトを棚に保存して、必要なとき1タップでコピー。",
    "icon": "assets/apps/copipe-shelf/icon.png",
