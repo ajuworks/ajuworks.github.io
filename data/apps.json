@@ -389,6 +389,21 @@
    "ads": false,
    "pro": false,
    "privacyListed": false
+  },
+  {
+   "slug": "video-compress",
+   "name": "動画ぴったり圧縮 - MB指定で動画を小さく",
+   "launcherName": "動画ぴったり圧縮",
+   "packageName": "com.ajuworks.videocompress",
+   "status": "development",
+   "category": "動画",
+   "description": "動画を10MB・25MBなど目標の容量に近づけて圧縮。端末内で処理し、元の動画は残します。",
+   "icon": "assets/apps/video-compress/icon.png",
+   "featured": false,
+   "sortOrder": 203,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
