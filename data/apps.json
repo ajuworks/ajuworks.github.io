@@ -434,6 +434,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "scam-check",
+   "name": "詐欺チェッカー - 怪しいSMS・URL判定",
+   "launcherName": "詐欺チェッカー",
+   "packageName": "com.ajuworks.scamcheck",
+   "status": "development",
+   "category": "ツール",
+   "description": "怪しいSMS・メールの文章やURLを端末内で判定。偽サイトに似たドメインや急がせる文言を指摘。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 204,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
