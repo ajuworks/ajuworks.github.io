@@ -554,6 +554,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "med-reminder",
+   "name": "おくすりアラーム - 飲み忘れ防止の服薬メモ",
+   "launcherName": "おくすりアラーム",
+   "packageName": "com.ajuworks.medreminder",
+   "status": "development",
+   "category": "医療",
+   "description": "飲む時間に通知し、通知から1タップで記録。残数管理と30日の記録。データは端末の中だけ。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 212,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
