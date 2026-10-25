@@ -404,6 +404,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "call-guard",
+   "name": "着信ガード - 迷惑電話ブロック",
+   "launcherName": "着信ガード",
+   "packageName": "com.ajuworks.callguard",
+   "status": "development",
+   "category": "ツール",
+   "description": "登録したルールで迷惑電話の着信を拒否・消音。番号は端末内だけで判定。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 202,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
