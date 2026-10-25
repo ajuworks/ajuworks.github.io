@@ -494,6 +494,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "warikan",
+   "name": "割り勘ノート - 立替精算をかんたん計算",
+   "launcherName": "割り勘ノート",
+   "packageName": "com.ajuworks.warikan",
+   "status": "development",
+   "category": "ファイナンス",
+   "description": "旅行・飲み会の立替を記録して、誰が誰にいくら払うかを最少回数で計算。端数ルールも選べる。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 208,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
