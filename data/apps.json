@@ -479,6 +479,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "photo-restore",
+   "name": "昔の写真レスキュー - 色あせ・キズを補正",
+   "launcherName": "昔の写真レスキュー",
+   "packageName": "com.ajuworks.photorestore",
+   "status": "development",
+   "category": "写真",
+   "description": "古い写真の色あせ・暗さ・ザラつき・小さなゴミを端末内で補正。元の写真はそのまま。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 207,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
