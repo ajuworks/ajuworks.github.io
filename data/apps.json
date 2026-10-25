@@ -569,6 +569,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "ja-transcribe",
+   "name": "声メモ文字起こし - 端末内で日本語を文字に",
+   "launcherName": "声メモ文字起こし",
+   "packageName": "com.ajuworks.jatranscribe",
+   "status": "development",
+   "category": "仕事効率化",
+   "description": "録音や音声ファイルを日本語の文字に。音声は外部に送らず端末の中で処理。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 213,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
