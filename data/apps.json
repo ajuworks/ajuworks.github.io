@@ -464,6 +464,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "leak-check",
+   "name": "漏洩チェッカー - パスワード流出確認",
+   "launcherName": "漏洩チェッカー",
+   "packageName": "com.ajuworks.leakcheck",
+   "status": "development",
+   "category": "ツール",
+   "description": "パスワードが流出データに含まれていないか、送信せずに確認（k匿名方式）。強さの判定と生成も。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 206,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
