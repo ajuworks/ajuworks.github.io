@@ -539,6 +539,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "family-list",
+   "name": "かぞく買い物メモ - 家族で共有できる買い物リスト",
+   "launcherName": "かぞく買い物メモ",
+   "packageName": "com.ajuworks.familylist",
+   "status": "development",
+   "category": "ショッピング",
+   "description": "家族と同じ買い物リストを共有。追加・チェックがすぐ届く。登録不要、コードを送るだけ。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 211,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
