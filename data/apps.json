@@ -419,6 +419,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "ec-photo-studio",
+   "name": "出品写真メーカー - フリマ写真を一括整形",
+   "launcherName": "出品写真メーカー",
+   "packageName": "com.ajuworks.ecphoto",
+   "status": "development",
+   "category": "写真",
+   "description": "出品用の写真を正方形・白背景・サイズ調整で一括整形。端末内処理で元の写真はそのまま。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 203,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
