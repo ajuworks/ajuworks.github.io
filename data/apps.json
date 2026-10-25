@@ -449,6 +449,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "secret-vault",
+   "name": "ひみつ金庫 - ファイルを暗号化して保管",
+   "launcherName": "ひみつ金庫",
+   "packageName": "com.ajuworks.secretvault",
+   "status": "development",
+   "category": "ツール",
+   "description": "写真や書類を端末内でAES-256暗号化して保管。指紋・画面ロックで解除。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 205,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
