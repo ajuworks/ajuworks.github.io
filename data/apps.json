@@ -524,6 +524,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "receipt-kakeibo",
+   "name": "レシート家計簿 - 撮るだけで記録",
+   "launcherName": "レシート家計簿",
+   "packageName": "com.ajuworks.receiptkakeibo",
+   "status": "development",
+   "category": "ファイナンス",
+   "description": "レシートを撮ると合計・日付・店名を端末内で読み取り。画像は保存せず、確認して記録。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 210,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
