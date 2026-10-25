@@ -509,6 +509,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "car-cost",
+   "name": "クルマ家計簿 - 燃費と維持費の記録",
+   "launcherName": "クルマ家計簿",
+   "packageName": "com.ajuworks.carcost",
+   "status": "development",
+   "category": "自動車",
+   "description": "給油と維持費を記録して燃費・月別費用を自動計算。車検や保険の期限も通知。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 209,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
