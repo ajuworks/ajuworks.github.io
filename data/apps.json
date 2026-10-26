@@ -644,6 +644,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "family-reminder",
+   "name": "家族の予定リマインダー",
+   "launcherName": "家族の予定リマインダー",
+   "packageName": "com.ajuworks.familyreminder",
+   "status": "development",
+   "category": "ライフスタイル",
+   "description": "共有カレンダーの家族の予定を、画面中央の大きな表示と音声でお知らせ。回数は予定の種類に合わせて自動で調整。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 218,
+   "ads": false,
+   "pro": false,
+   "privacyListed": true
   }
  ]
 }
