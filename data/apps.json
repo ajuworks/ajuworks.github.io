@@ -629,6 +629,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "house-chores",
+   "name": "家事メモ - くり返し家事の予定と分担",
+   "launcherName": "家事メモ",
+   "packageName": "com.ajuworks.kajimemo",
+   "status": "development",
+   "category": "ライフスタイル",
+   "description": "くり返し家事を朝にお知らせ。「やった」で次回へ。担当と回数で家族の分担に。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 217,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
