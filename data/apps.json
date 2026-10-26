@@ -599,6 +599,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "pet-health",
+   "name": "ペット手帳 - 通院・ワクチン・体重の記録",
+   "launcherName": "ペット手帳",
+   "packageName": "com.ajuworks.pettecho",
+   "status": "development",
+   "category": "ライフスタイル",
+   "description": "通院・ワクチン・予防薬・体重をまとめて記録。次の予定を朝にお知らせ。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 215,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
