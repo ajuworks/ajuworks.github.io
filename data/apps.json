@@ -584,6 +584,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "food-expiry",
+   "name": "期限ノート - 賞味期限・食材ストック管理",
+   "launcherName": "期限ノート",
+   "packageName": "com.ajuworks.kigennote",
+   "status": "development",
+   "category": "フード＆ドリンク",
+   "description": "賞味期限を写真から読み取って登録。期限が近い食材を毎朝お知らせ。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 214,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
