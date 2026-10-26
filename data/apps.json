@@ -614,6 +614,21 @@
    "ads": true,
    "pro": true,
    "privacyListed": true
+  },
+  {
+   "slug": "travel-packing",
+   "name": "旅じたく - 旅行の持ち物チェックリスト",
+   "launcherName": "旅じたく",
+   "packageName": "com.ajuworks.tabijitaku",
+   "status": "development",
+   "category": "旅行＆地域",
+   "description": "旅の種類と日数で持ち物リストを自動作成。行きの準備も帰りの忘れ物チェックも。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 216,
+   "ads": true,
+   "pro": true,
+   "privacyListed": true
   }
  ]
 }
