@@ -501,7 +501,7 @@
    "launcherName": "割り勘ノート",
    "packageName": "com.ajuworks.warikan",
    "status": "development",
-   "category": "ファイナンス",
+   "category": "その他",
    "description": "旅行・飲み会の立替を記録して、誰が誰にいくら払うかを最少回数で計算。端数ルールも選べる。",
    "icon": "",
    "featured": false,
@@ -531,7 +531,7 @@
    "launcherName": "レシート家計簿",
    "packageName": "com.ajuworks.receiptkakeibo",
    "status": "development",
-   "category": "ファイナンス",
+   "category": "その他",
    "description": "レシートを撮ると合計・日付・店名を端末内で読み取り。画像は保存せず、確認して記録。",
    "icon": "",
    "featured": false,
@@ -658,6 +658,21 @@
    "sortOrder": 218,
    "ads": false,
    "pro": false,
+   "privacyListed": true
+  },
+  {
+   "slug": "sakiyomi",
+   "name": "先読み残高 - キャッシュフロー予測",
+   "launcherName": "先読み残高",
+   "packageName": "com.ajuworks.sakiyomi",
+   "status": "development",
+   "category": "その他",
+   "description": "5項目入れるだけで、何月に残高がいくら・いつ足りなくなるかを先読み。銀行連携なし・通信なし。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 219,
+   "ads": false,
+   "pro": true,
    "privacyListed": true
   }
  ]
