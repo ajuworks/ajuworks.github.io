@@ -688,6 +688,62 @@
    "sortOrder": 220,
    "ads": true,
    "pro": true
+  },
+  {
+   "slug": "soryo-navi",
+   "name": "送料ナビ - 発送方法を安い順に比較",
+   "launcherName": "送料ナビ",
+   "packageName": "com.ajuworks.soryonavi",
+   "status": "development",
+   "category": "ショッピング",
+   "description": "サイズと重さから、対応する匿名配送と郵便の送料を安い順に。料金の出典つき・広告なし・通信なし。",
+   "icon": "assets/apps/soryo-navi/icon.png",
+   "featured": false,
+   "sortOrder": 230,
+   "ads": false,
+   "pro": true
+  },
+  {
+   "slug": "ikura-toku",
+   "name": "いくら得？ - ポイント込みの実質価格を比較",
+   "launcherName": "いくら得？",
+   "packageName": "com.ajuworks.ikuratoku",
+   "status": "development",
+   "category": "ショッピング",
+   "description": "価格・送料・クーポン・ポイント還元から実質いくらかを比較。広告なし・通信なし。",
+   "icon": "assets/apps/ikura-toku/icon.png",
+   "featured": false,
+   "sortOrder": 240,
+   "ads": false,
+   "pro": true
+  },
+  {
+   "slug": "size-pittari",
+   "name": "サイズぴったり - 家具・家電が入るか確認",
+   "launcherName": "サイズぴったり",
+   "packageName": "com.ajuworks.sizepittari",
+   "status": "development",
+   "category": "ツール",
+   "description": "家具・家電が置き場所に入るか、ドア・曲がり角・エレベーターを通るかを寸法で確認。広告なし・通信なし。",
+   "icon": "assets/apps/size-pittari/icon.png",
+   "featured": false,
+   "sortOrder": 250,
+   "ads": false,
+   "pro": true
+  },
+  {
+   "slug": "hosho-note",
+   "name": "保証ノート - 家電の保証期限と保証書を管理",
+   "launcherName": "保証ノート",
+   "packageName": "com.ajuworks.hoshonote",
+   "status": "development",
+   "category": "仕事効率化",
+   "description": "家電の保証期限を自動計算して終わる前に通知。保証書の写真も保存。広告なし・通信なし。",
+   "icon": "assets/apps/hosho-note/icon.png",
+   "featured": false,
+   "sortOrder": 260,
+   "ads": false,
+   "pro": true
   }
  ]
 }
