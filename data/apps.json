@@ -817,6 +817,21 @@
    "ads": true,
    "pro": false,
    "privacyListed": true
+  },
+  {
+   "slug": "kigou-yomi",
+   "name": "記号の読み方帳",
+   "launcherName": "記号の読み方帳",
+   "packageName": "com.ajuworks.kigouyomi",
+   "status": "development",
+   "category": "ツール",
+   "description": "記号の読み方を調べられる帳面。見た項目や検索語は端末に保存せず、サーバーへ送りません。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 226,
+   "ads": true,
+   "pro": false,
+   "privacyListed": true
   }
  ]
 }
