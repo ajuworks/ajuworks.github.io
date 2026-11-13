@@ -803,6 +803,21 @@
    "ads": true,
    "pro": false,
    "privacyListed": true
+  },
+  {
+   "slug": "kikaku-miwake",
+   "name": "電池と電球口金の見分け帳",
+   "launcherName": "電池と電球口金の見分け帳",
+   "packageName": "com.ajuworks.kikakumiwake",
+   "status": "development",
+   "category": "ツール",
+   "description": "電池と電球の口金を、名前や寸法から見分けられる辞典。互換は目安で、機器の指定品番が優先です。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 225,
+   "ads": true,
+   "pro": false,
+   "privacyListed": true
   }
  ]
 }
