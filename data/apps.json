@@ -847,6 +847,36 @@
    "ads": true,
    "pro": false,
    "privacyListed": true
+  },
+  {
+   "slug": "tsukaiwake",
+   "name": "使い分け帳",
+   "launcherName": "使い分け帳",
+   "packageName": "com.ajuworks.tsukaiwake",
+   "status": "development",
+   "category": "ツール",
+   "description": "異字同訓・同音異義の書き分けを読みから引いて比べられる帳面。見た項目や検索語は端末に保存せず、サーバーへ送りません。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 262,
+   "ads": true,
+   "pro": false,
+   "privacyListed": true
+  },
+  {
+   "slug": "kakuchoshi",
+   "name": "拡張子の見分け帳",
+   "launcherName": "拡張子の見分け帳",
+   "packageName": "com.ajuworks.kakuchoshi",
+   "status": "development",
+   "category": "ツール",
+   "description": "拡張子が何のファイルかと似た拡張子との違いを引ける帳面。端末のファイルは読まず、検索語も保存・送信しません。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 263,
+   "ads": true,
+   "pro": false,
+   "privacyListed": true
   }
  ]
 }
