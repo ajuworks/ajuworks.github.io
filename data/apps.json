@@ -832,6 +832,21 @@
    "ads": true,
    "pro": false,
    "privacyListed": true
+  },
+  {
+   "slug": "kazoe-kata",
+   "name": "数え方帳",
+   "launcherName": "数え方帳",
+   "packageName": "com.ajuworks.kazoekata",
+   "status": "development",
+   "category": "ツール",
+   "description": "助数詞の読みと使いどころを調べられる帳面。見た項目や検索語は端末に保存せず、サーバーへ送りません。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 261,
+   "ads": true,
+   "pro": false,
+   "privacyListed": true
   }
  ]
 }
