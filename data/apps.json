@@ -664,7 +664,7 @@
    "name": "PDFまるわかり - 閲覧・注釈・日本語翻訳",
    "launcherName": "PDFまるわかり",
    "packageName": "com.ajuworks.pdfmaruwakari",
-   "status": "in_review",
+   "status": "published",
    "category": "仕事効率化",
    "description": "PDF を読む・線を引く・書き込む・整理する・日本語で理解する。本文は端末の外に送らない。買い切り Pro。",
    "icon": "assets/apps/pdf-maruwakari/icon.png",
