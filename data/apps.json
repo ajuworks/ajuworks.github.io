@@ -877,6 +877,36 @@
    "ads": true,
    "pro": false,
    "privacyListed": true
+  },
+  {
+   "slug": "tegami-bunmen",
+   "name": "手紙・お礼状の文面づくり",
+   "launcherName": "手紙・お礼状の文面づくり",
+   "packageName": "com.ajuworks.tegamibunmen",
+   "status": "development",
+   "category": "ツール",
+   "description": "場面・相手・月を選んで、手紙やお礼状の文面の一例を組み立てる帳面。入力した名前や文面は端末のメモリにだけ置き、サーバーへ送りません。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 264,
+   "ads": true,
+   "pro": false,
+   "privacyListed": true
+  },
+  {
+   "slug": "teiki-check",
+   "name": "定期券 元が取れる日数の目安",
+   "launcherName": "定期券 元が取れる日数の目安",
+   "packageName": "com.ajuworks.teikicheck",
+   "status": "development",
+   "category": "ツール",
+   "description": "定期券と都度払い・回数券の総額を比べ、定期券の元が取れる日数の目安を試算する。入力した運賃や日数は端末内で計算し、サーバーへ送りません。",
+   "icon": "",
+   "featured": false,
+   "sortOrder": 265,
+   "ads": true,
+   "pro": false,
+   "privacyListed": true
   }
  ]
 }
