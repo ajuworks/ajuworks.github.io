@@ -75,7 +75,7 @@
   },
   {
    "slug": "atokeshi",
-   "name": "あと消し - スクショ・ファイル自動整理",
+   "name": "あと消し - スクショ整理・期限で自動整理",
    "launcherName": "あと消し",
    "packageName": "com.ajuworks.atokeshi",
    "status": "published",
