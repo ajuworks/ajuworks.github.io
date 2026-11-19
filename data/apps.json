@@ -406,7 +406,7 @@
   },
   {
    "slug": "call-guard",
-   "name": "着信ガード - 登録した番号の着信拒否",
+   "name": "着信ガード - 着信拒否と迷惑電話ブロック",
    "launcherName": "着信ガード",
    "packageName": "com.ajuworks.callguard",
    "status": "published",
