@@ -411,7 +411,7 @@
    "packageName": "com.ajuworks.callguard",
    "status": "published",
    "category": "ツール",
-   "description": "登録したルールで登録した番号の着信を拒否・消音。番号は端末内だけで判定。",
+   "description": "登録した番号の着信を拒否・消音。番号は端末内だけで判定。",
    "icon": "assets/apps/call-guard/icon.png",
    "featured": false,
    "sortOrder": 202,
