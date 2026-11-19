@@ -164,6 +164,7 @@ def footer(prefix):
             <li><a href="%(p)sprivacy.html">プライバシーポリシー（共通）</a></li>
             <li><a href="%(p)sprivacy/">アプリ別プライバシーポリシー</a></li>
             <li><a href="%(p)sterms.html">利用規約</a></li>
+            <li><a href="%(p)stokushoho.html">特定商取引法に基づく表記</a></li>
           </ul>
         </div>
 
@@ -616,6 +617,10 @@ def build_privacy_common(apps, dry):
               購入状態（購入済みかどうか）は、Google Play を通じてアプリが確認します。
               課金の有無と内容はアプリごとに異なります。詳細は各アプリのストア掲載情報とアプリ別ポリシーをご確認ください。
             </p>
+            <p>
+              Pro などの有料機能の販売条件（販売事業者・価格・お支払い方法・返品の扱いなど）は、
+              <a href="tokushoho.html">特定商取引法に基づく表記</a>をご覧ください。
+            </p>
           </div>
 
           <div class="doc-chapter" id="app-policies">
@@ -734,7 +739,7 @@ def build_404(dry):
 
 def build_sitemap(apps, dry):
     pub, prep = privacy_listed(apps)
-    urls = ["/", "/apps.html", "/privacy.html", "/privacy/", "/support.html", "/about.html", "/terms.html"]
+    urls = ["/", "/apps.html", "/privacy.html", "/privacy/", "/support.html", "/about.html", "/terms.html", "/tokushoho.html"]
     urls += ["/privacy/%s/" % a["slug"] for a in pub + prep]
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
            + "".join("  <url><loc>%s%s</loc></url>\n" % (SITE, u) for u in urls) + "</urlset>\n")
