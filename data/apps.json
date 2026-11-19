@@ -434,7 +434,7 @@
   },
   {
    "slug": "scam-check",
-   "name": "詐欺チェッカー - 怪しいSMS・URL判定",
+   "name": "詐欺チェッカー - 怪しいSMS・URL確認",
    "launcherName": "詐欺チェッカー",
    "packageName": "com.ajuworks.scamcheck",
    "status": "published",
