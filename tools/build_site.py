@@ -526,7 +526,7 @@ def build_privacy_common(apps, dry):
       <div class="container">
         <div class="document-content">
           <div class="document-meta">
-            <span><strong>制定:</strong> 2026年5月 ／ <strong>最終更新:</strong> 2026年10月21日（共通ポリシーとアプリ別ポリシーを分離）</span>
+            <span><strong>制定:</strong> 2026年5月 ／ <strong>最終更新:</strong> 2026年XX月XX日</span>
             <span><strong>事業者:</strong> Aju Works（個人事業）</span>
           </div>
           %(script)s%(anchors)s
@@ -586,7 +586,9 @@ def build_privacy_common(apps, dry):
               本サービスは、Google Play 等のプラットフォームを通じて提供されます。
               これらのプラットフォームが収集・処理する情報（アプリのインストール・更新・購入・クラッシュ情報など）は、
               各プラットフォーム事業者のプライバシーポリシーに従います。
-              当事業者はこれらのプラットフォームのデータ処理について責任を負いません。
+              Google Play、Google AdMob など第三者のプラットフォームによるデータ処理は、それぞれの事業者のポリシーに従って行われ、
+              当事業者はその処理を管理することができません。
+              当事業者の責任の範囲は、<a href="terms.html">利用規約</a>第4章によります。
             </p>
             <ul>
               <li>Google LLC（Google Play ほか）: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
