@@ -526,7 +526,7 @@ def build_privacy_common(apps, dry):
       <div class="container">
         <div class="document-content">
           <div class="document-meta">
-            <span><strong>制定:</strong> 2026年5月 ／ <strong>最終更新:</strong> 2026年XX月XX日</span>
+            <span><strong>制定:</strong> 2026年5月 ／ <strong>最終更新:</strong> 2026年11月23日</span>
             <span><strong>事業者:</strong> Aju Works（個人事業）</span>
           </div>
           %(script)s%(anchors)s
