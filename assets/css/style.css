@@ -1104,6 +1104,7 @@ main {
   white-space: nowrap;
 }
 .info-table td {
+  overflow-wrap: anywhere;
   color: var(--color-text);
   line-height: 1.7;
 }
